@@ -1,0 +1,1872 @@
+gameid:  2016010100gm-00a9-0000-4f02b0d8
+
+
+Riichi States
+round wind:  0 | dealer:  2 | tilesInWall:  35 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: W | POVHand:  45m566778p112345s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567m111z
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player0 pool:  28m29p8s156z
+player1 pool:  19p25567z
+player2 pool:  9m49p3s34467z
+player3 pool:  1689m4789p3s3z
+label:  1
+call tile: None
+
+round wind:  0 | dealer:  3 | tilesInWall:  34 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [330, 230, 210, 230]
+POV wind: S | POVHand:  12368m55p2345677s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 345m666z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 2 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789m123s555z
+player0 pool:  147p12s223z
+player1 pool:  2m2448p13s13z
+player2 pool:  1m278p9s27z
+player3 pool:  2m467799p89s17z
+label:  1
+call tile: None
+
+round wind:  0 | dealer:  3 | tilesInWall:  23 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [230, 210, 178, 382]
+POV wind: S | POVHand:  1122678m4556p567s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 2 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222s777z
+player0 pool:  129p1337s11456z
+player1 pool:  3m129p789s3456z
+player2 pool:  1m117p178s147z
+player3 pool:  3m269p13669s3566z
+label:  1
+call tile: None
+
+round wind:  1 | dealer:  2 | tilesInWall:  51 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [372, 250, 293, 85]
+POV wind: W | POVHand:  234678m67p345667s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  4p167z
+player1 pool:  1p236z
+player2 pool:  245m2p2z
+player3 pool:  8s1246z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  2 | tilesInWall:  47 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [372, 250, 293, 85]
+POV wind: W | POVHand:  234678m667p34566s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  4p7s167z
+player1 pool:  1p2346z
+player2 pool:  245m2p12z
+player3 pool:  3m8s1246z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  3 | tilesInWall:  44 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [85, 372, 250, 293]
+POV wind: S | POVHand:  456m123468p345s33z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  3m8s1246z
+player1 pool:  46p7s167z
+player2 pool:  1p3s2346z
+player3 pool:  2455m2p12z
+label:  1
+call tile: None
+
+round wind:  1 | dealer:  2 | tilesInWall:  43 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  1 | scores [372, 250, 293, 75]
+POV wind: W | POVHand:  2346778m67p34566s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player0 pool:  46p7s167z
+player1 pool:  1p3s2346z
+player2 pool:  2455m2p12z
+player3 pool:  3m4p8s1246z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  2 | tilesInWall:  52 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [240, 273, 125, 362]
+POV wind: W | POVHand:  68m123p112367899s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789p
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  3m89p
+player1 pool:  1m2s11z
+player2 pool:  9m9p149s
+player3 pool:  9m5p7s56z
+label:  1
+call tile: None
+
+round wind:  1 | dealer:  2 | tilesInWall:  20 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [201, 273, 164, 362]
+POV wind: W | POVHand:  1113335m1233455s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player0 pool:  9m378p7799s125z
+player1 pool:  789m19p34s1134z
+player2 pool:  22589m29p23s2346z
+player3 pool:  18m28p24579s12566z
+label:  1
+call tile: None
+
+round wind:  1 | dealer:  3 | tilesInWall:  40 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  0 | scores [206, 288, 149, 347]
+POV wind: S | POVHand:  2345667m888p1156s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  22m236p7s6z
+player1 pool:  8m114p189s
+player2 pool:  89m3379p2z
+player3 pool:  79m225p356z
+label:  1
+call tile: None
+
+round wind:  1 | dealer:  0 | tilesInWall:  37 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [347, 196, 288, 149]
+POV wind: E | POVHand:  11133567m22456s4z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  79m225p356z
+player1 pool:  226m236p7s6z
+player2 pool:  8m1146p189s
+player3 pool:  89m3379p24z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  1 | tilesInWall:  34 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [149, 347, 196, 288]
+POV wind: N | POVHand:  22334457789s117z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  89m3379p24z
+player1 pool:  79m225p3456z
+player2 pool:  2267m236p7s6z
+player3 pool:  8m11466p189s
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  0 | tilesInWall:  33 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [347, 196, 288, 149]
+POV wind: E | POVHand:  11133567m22456s3z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  79m225p3456z
+player1 pool:  2267m236p7s6z
+player2 pool:  8m11466p189s
+player3 pool:  89m3379p247z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  1 | tilesInWall:  30 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [149, 347, 196, 288]
+POV wind: N | POVHand:  22334457789s115z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  89m3379p247z
+player1 pool:  79m225p33456z
+player2 pool:  2267m236p7s26z
+player3 pool:  8m11466p189s3z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  0 | tilesInWall:  29 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [347, 196, 288, 149]
+POV wind: E | POVHand:  11133567m22456s5z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  79m225p33456z
+player1 pool:  2267m236p7s26z
+player2 pool:  8m11466p189s3z
+player3 pool:  89m3379p2457z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  1 | tilesInWall:  26 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [149, 347, 196, 288]
+POV wind: N | POVHand:  223344577789s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  89m3379p2457z
+player1 pool:  79m225p334556z
+player2 pool:  2267m2366p7s26z
+player3 pool:  8m11466p189s23z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  0 | tilesInWall:  25 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [347, 196, 288, 149]
+POV wind: E | POVHand:  11133567m5p22456s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  79m225p334556z
+player1 pool:  2267m2366p7s26z
+player2 pool:  8m11466p189s23z
+player3 pool:  89m3379p7s2457z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  1 | tilesInWall:  22 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [149, 347, 196, 288]
+POV wind: N | POVHand:  8m22334457789s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  89m3379p7s2457z
+player1 pool:  79m2255p334556z
+player2 pool:  2267m2366p7s246z
+player3 pool:  8m11466p189s236z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  0 | tilesInWall:  21 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [347, 196, 288, 149]
+POV wind: E | POVHand:  11133567m224568s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  79m2255p334556z
+player1 pool:  2267m2366p7s246z
+player2 pool:  8m11466p189s236z
+player3 pool:  889m3379p7s2457z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  1 | tilesInWall:  18 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [149, 347, 196, 288]
+POV wind: N | POVHand:  5p22334457789s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  889m3379p7s2457z
+player1 pool:  679m2255p334556z
+player2 pool:  22667m2366p7s246z
+player3 pool:  8m11466p189s2367z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  1 | tilesInWall:  14 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [149, 347, 196, 288]
+POV wind: N | POVHand:  22334457789s114z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  889m33579p7s2457z
+player1 pool:  6779m2255p334556z
+player2 pool:  22667m2366p7s2246z
+player3 pool:  8m11466p189s23677z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  1 | tilesInWall:  10 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [149, 347, 196, 288]
+POV wind: N | POVHand:  3m22334457789s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  889m33579p7s24457z
+player1 pool:  36779m2255p334556z
+player2 pool:  22667m2366p7s22346z
+player3 pool:  8m11466p189s235677z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  1 | tilesInWall:  6 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [149, 347, 196, 288]
+POV wind: N | POVHand:  4p22334457789s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  3889m33579p7s24457z
+player1 pool:  336779m2255p334556z
+player2 pool:  22667m12366p7s22346z
+player3 pool:  8m113466p189s235677z
+label:  0
+call tile: None
+
+round wind:  1 | dealer:  1 | tilesInWall:  5 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [149, 347, 196, 288]
+POV wind: N | POVHand:  8m22334457789s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 444p
+player0 pool:  3889m33579p7s24457z
+player1 pool:  336779m2255p334556z
+player2 pool:  22667m12366p7s22346z
+player3 pool:  8m1134669p189s235677z
+label:  0
+call tile: None
+
+
+
+Chi States
+round wind:  0 | dealer:  2 | tilesInWall:  59 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: W | POVHand:  24m256677p12345s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 111z
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player0 pool:  9p1z
+player1 pool:  9p2z
+player2 pool:  9p34z
+player3 pool:  189m4p
+label:  0
+call tile: 4p
+
+round wind:  0 | dealer:  1 | tilesInWall:  58 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: N | POVHand:  1169m13345p78s67z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 111z
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9p2z
+player1 pool:  9p34z
+player2 pool:  189m4p
+player3 pool:  29p1z
+label:  0
+call tile: 2p
+
+round wind:  0 | dealer:  0 | tilesInWall:  57 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: E | POVHand:  44579m599s67z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 111z
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9p34z
+player1 pool:  189m4p
+player2 pool:  29p1z
+player3 pool:  6m9p2z
+label:  1
+call tile: 6m
+
+round wind:  0 | dealer:  2 | tilesInWall:  56 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: W | POVHand:  248m56677p12345s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567m111z
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player0 pool:  29p1z
+player1 pool:  9p2z
+player2 pool:  9p347z
+player3 pool:  189m48p
+label:  0
+call tile: 8p
+
+round wind:  0 | dealer:  2 | tilesInWall:  48 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: W | POVHand:  248m56677p12345s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567m111z
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player0 pool:  29p8s16z
+player1 pool:  9p257z
+player2 pool:  9m9p3467z
+player3 pool:  189m478p3z
+label:  0
+call tile: 7p
+
+round wind:  0 | dealer:  3 | tilesInWall:  45 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: S | POVHand:  24m4569p56s44z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567m111z
+player0 pool:  189m478p3z
+player1 pool:  8m29p8s16z
+player2 pool:  9p2557z
+player3 pool:  9m49p3467z
+label:  0
+call tile: 4p
+
+round wind:  0 | dealer:  2 | tilesInWall:  44 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: W | POVHand:  245m56677p12345s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567m111z
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player0 pool:  8m29p8s16z
+player1 pool:  9p2557z
+player2 pool:  9m49p3467z
+player3 pool:  189m478p3s3z
+label:  0
+call tile: 3s
+
+round wind:  0 | dealer:  1 | tilesInWall:  43 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: N | POVHand:  11389m13345p78s6z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567m111z
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9p2557z
+player1 pool:  9m49p3467z
+player2 pool:  189m478p3s3z
+player3 pool:  28m29p8s16z
+label:  0
+call tile: 2m
+
+round wind:  0 | dealer:  2 | tilesInWall:  36 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: W | POVHand:  45m56677p112345s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567m111z
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player0 pool:  28m29p8s156z
+player1 pool:  19p25567z
+player2 pool:  9m49p3s34467z
+player3 pool:  1689m4789p3s3z
+label:  0
+call tile: 6m
+
+round wind:  0 | dealer:  3 | tilesInWall:  33 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  1 | scores [250, 240, 250, 250]
+POV wind: S | POVHand:  24m456p567s44z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567m111z
+player0 pool:  1689m4789p3s3z
+player1 pool:  28m29p28s156z
+player2 pool:  8m19p25567z
+player3 pool:  9m469p3s34467z
+label:  0
+call tile: 6p
+
+round wind:  0 | dealer:  3 | tilesInWall:  59 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [330, 230, 210, 230]
+POV wind: S | POVHand:  2338m457p22467s6z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 555z
+player0 pool:  1p1s3z
+player1 pool:  13z
+player2 pool:  1m2z
+player3 pool:  9p89s7z
+label:  0
+call tile: 8s
+
+round wind:  0 | dealer:  1 | tilesInWall:  54 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [210, 230, 330, 230]
+POV wind: N | POVHand:  457m289p1245779s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 555z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 666z
+player0 pool:  1m27z
+player1 pool:  9p89s17z
+player2 pool:  1p1s23z
+player3 pool:  2m3s13z
+label:  0
+call tile: 3s
+
+round wind:  0 | dealer:  0 | tilesInWall:  53 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [230, 330, 230, 210]
+POV wind: E | POVHand:  26789m477p23s
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 555z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 666z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9p89s17z
+player1 pool:  1p1s23z
+player2 pool:  2m3s13z
+player3 pool:  17m27z
+label:  1
+call tile: 7m
+
+round wind:  0 | dealer:  3 | tilesInWall:  49 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [330, 230, 210, 230]
+POV wind: S | POVHand:  23368m455p22467s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 666z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789m555z
+player0 pool:  17p1s23z
+player1 pool:  2m4p3s13z
+player2 pool:  1m7p27z
+player3 pool:  2m69p89s17z
+label:  0
+call tile: 6p
+
+round wind:  0 | dealer:  2 | tilesInWall:  44 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [230, 210, 230, 330]
+POV wind: W | POVHand:  4578m2p66699s
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 666z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789m555z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  2m44p3s13z
+player1 pool:  1m7p9s27z
+player2 pool:  2m469p89s17z
+player3 pool:  3m17p12s23z
+label:  1
+call tile: 3m
+
+round wind:  0 | dealer:  0 | tilesInWall:  39 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [230, 330, 230, 210]
+POV wind: E | POVHand:  67m7p23s44z
+player0| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789m555z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 345m666z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  2m4679p89s17z
+player1 pool:  147p12s23z
+player2 pool:  2m244p13s13z
+player3 pool:  1m27p19s27z
+label:  1
+call tile: 1s
+
+round wind:  0 | dealer:  1 | tilesInWall:  67 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [178, 382, 230, 210]
+POV wind: N | POVHand:  67m1347p178s1334z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  
+player1 pool:  3z
+player2 pool:  1z
+player3 pool:  9s
+label:  0
+call tile: 9s
+
+round wind:  0 | dealer:  3 | tilesInWall:  53 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [230, 210, 178, 382]
+POV wind: S | POVHand:  112268m14556p7s6z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9p115z
+player1 pool:  89s45z
+player2 pool:  1p1s14z
+player3 pool:  3m2p1s35z
+label:  0
+call tile: 3m
+
+round wind:  0 | dealer:  3 | tilesInWall:  50 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [230, 210, 178, 382]
+POV wind: S | POVHand:  112268m4556p67s6z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222s
+player0 pool:  19p115z
+player1 pool:  89s345z
+player2 pool:  1p1s14z
+player3 pool:  3m26p1s35z
+label:  0
+call tile: 6p
+
+round wind:  0 | dealer:  1 | tilesInWall:  38 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [178, 382, 230, 210]
+POV wind: N | POVHand:  12267m334p888s33z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 2 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222s777z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  17p17s14z
+player1 pool:  3m26p139s356z
+player2 pool:  129p33s1156z
+player3 pool:  3m789s3456z
+label:  0
+call tile: 3m
+
+round wind:  0 | dealer:  1 | tilesInWall:  26 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [178, 382, 230, 210]
+POV wind: N | POVHand:  22467m334p888s33z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 2 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222s777z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  1m117p17s147z
+player1 pool:  3m269p13669s356z
+player2 pool:  129p1337s11456z
+player3 pool:  3m129p789s3456z
+label:  0
+call tile: 2p
+
+round wind:  0 | dealer:  2 | tilesInWall:  23 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  1 | scores [210, 178, 382, 230]
+POV wind: W | POVHand:  345568m4567p4s22z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 2 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222s777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player0 pool:  3m129p789s3456z
+player1 pool:  1m117p178s147z
+player2 pool:  3m269p13669s3566z
+player3 pool:  1259p1337s11456z
+label:  0
+call tile: 5p
+
+round wind:  0 | dealer:  1 | tilesInWall:  22 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  1 | scores [178, 382, 220, 210]
+POV wind: N | POVHand:  224667m334p88s33z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 2 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222s777z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  1m117p178s147z
+player1 pool:  3m269p13669s3566z
+player2 pool:  1259p1337s11456z
+player3 pool:  3m1259p789s3456z
+label:  0
+call tile: 5p
+
+round wind:  0 | dealer:  2 | tilesInWall:  11 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  1 | scores [210, 178, 382, 220]
+POV wind: W | POVHand:  345568m3467p45s2z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 2 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222s777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player0 pool:  3m1259p789s223456z
+player1 pool:  1m117p1378s13347z
+player2 pool:  3m26899p13669s34566z
+player3 pool:  12559p113379s11456z
+label:  0
+call tile: 5p
+
+round wind:  0 | dealer:  2 | tilesInWall:  3 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  1 | scores [210, 178, 382, 220]
+POV wind: W | POVHand:  1345568m3677p45s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 2 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222s777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player0 pool:  3m12459p789s2223456z
+player1 pool:  1m11278p1378s13347z
+player2 pool:  3m268899p13669s234566z
+player3 pool:  1245589p113379s11456z
+label:  0
+call tile: 8p
+
+round wind:  0 | dealer:  0 | tilesInWall:  62 | doras:  4s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [250, 200, 168, 372]
+POV wind: E | POVHand:  2556678m4477p45s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  57z
+player1 pool:  8p7z
+player2 pool:  8m4z
+player3 pool:  8m2s
+label:  0
+call tile: 8m
+
+round wind:  0 | dealer:  3 | tilesInWall:  61 | doras:  4s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [200, 168, 372, 250]
+POV wind: S | POVHand:  1379m5p2456s2666z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  8p7z
+player1 pool:  8m4z
+player2 pool:  8m2s
+player3 pool:  2m57z
+label:  1
+call tile: 2m
+
+round wind:  0 | dealer:  0 | tilesInWall:  59 | doras:  4s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [250, 200, 168, 372]
+POV wind: E | POVHand:  556678m44577p45s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 123m
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  57z
+player1 pool:  9m8p7z
+player2 pool:  8m24z
+player3 pool:  89m2s
+label:  0
+call tile: 9m
+
+round wind:  0 | dealer:  2 | tilesInWall:  48 | doras:  14s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [168, 372, 250, 200]
+POV wind: W | POVHand:  56m1133468p668s3z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 1 | #pon= 0 | #kan= 1 | #isOpen= 1 | #isRiichi= 0 | melds: 123m6666z
+player0 pool:  38m9s24z
+player1 pool:  289m2s5z
+player2 pool:  8m12p57z
+player3 pool:  79m58p27z
+label:  0
+call tile: 5p
+
+round wind:  0 | dealer:  3 | tilesInWall:  40 | doras:  14s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [200, 168, 372, 250]
+POV wind: S | POVHand:  78p22456s
+player0| #chi= 1 | #pon= 0 | #kan= 1 | #isOpen= 1 | #isRiichi= 0 | melds: 123m6666z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 444p
+player0 pool:  79m58p6s27z
+player1 pool:  38m19s234z
+player2 pool:  22899m2s5z
+player3 pool:  8m12p4s2557z
+label:  0
+call tile: 4s
+
+round wind:  0 | dealer:  1 | tilesInWall:  38 | doras:  14s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [372, 250, 200, 168]
+POV wind: N | POVHand:  111m23789p57s114z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 444p
+player2| #chi= 1 | #pon= 0 | #kan= 1 | #isOpen= 1 | #isRiichi= 0 | melds: 123m6666z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  22899m2s5z
+player1 pool:  8m12p4s2557z
+player2 pool:  79m58p66s27z
+player3 pool:  38m169s234z
+label:  1
+call tile: 6s
+
+round wind:  0 | dealer:  1 | tilesInWall:  35 | doras:  14s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [372, 250, 200, 168]
+POV wind: N | POVHand:  111m23789p11z
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567s
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 444p
+player2| #chi= 1 | #pon= 0 | #kan= 1 | #isOpen= 1 | #isRiichi= 0 | melds: 123m6666z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  22899m2s45z
+player1 pool:  8m125p4s2557z
+player2 pool:  79m58p668s27z
+player3 pool:  38m9p19s234z
+label:  0
+call tile: 9p
+
+round wind:  1 | dealer:  3 | tilesInWall:  65 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [85, 372, 250, 293]
+POV wind: S | POVHand:  3456m1234p458s36z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  1z
+player1 pool:  6z
+player2 pool:  2z
+player3 pool:  2m2z
+label:  0
+call tile: 2m
+
+round wind:  1 | dealer:  0 | tilesInWall:  62 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [293, 85, 372, 250]
+POV wind: E | POVHand:  58m22389p11279s1z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  2m2z
+player1 pool:  16z
+player2 pool:  4p6z
+player3 pool:  1p2z
+label:  0
+call tile: 1p
+
+round wind:  1 | dealer:  3 | tilesInWall:  61 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [85, 372, 250, 293]
+POV wind: S | POVHand:  3456m1234p458s34z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  16z
+player1 pool:  4p6z
+player2 pool:  1p2z
+player3 pool:  2m2p2z
+label:  0
+call tile: 2p
+
+round wind:  1 | dealer:  3 | tilesInWall:  57 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [85, 372, 250, 293]
+POV wind: S | POVHand:  3456m1234p458s34z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  126z
+player1 pool:  4p67z
+player2 pool:  1p26z
+player3 pool:  25m2p2z
+label:  0
+call tile: 5m
+
+round wind:  1 | dealer:  3 | tilesInWall:  53 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [85, 372, 250, 293]
+POV wind: S | POVHand:  3456m1234p458s33z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  1246z
+player1 pool:  4p167z
+player2 pool:  1p236z
+player3 pool:  245m2p2z
+label:  0
+call tile: 4m
+
+round wind:  1 | dealer:  2 | tilesInWall:  52 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [372, 250, 293, 85]
+POV wind: W | POVHand:  234678m67p34567s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  4p167z
+player1 pool:  1p236z
+player2 pool:  245m2p2z
+player3 pool:  8s1246z
+label:  0
+call tile: 8s
+
+round wind:  1 | dealer:  2 | tilesInWall:  48 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [372, 250, 293, 85]
+POV wind: W | POVHand:  234678m67p34566s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  4p7s167z
+player1 pool:  1p2346z
+player2 pool:  245m2p12z
+player3 pool:  3m8s1246z
+label:  0
+call tile: 3m
+
+round wind:  1 | dealer:  1 | tilesInWall:  47 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 293, 85, 372]
+POV wind: N | POVHand:  1157m456p233479s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  1p2346z
+player1 pool:  245m2p12z
+player2 pool:  3m8s1246z
+player3 pool:  46p7s167z
+label:  0
+call tile: 6p
+
+round wind:  1 | dealer:  0 | tilesInWall:  46 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [293, 85, 372, 250]
+POV wind: E | POVHand:  89m2389p11279s55z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  245m2p12z
+player1 pool:  3m8s1246z
+player2 pool:  46p7s167z
+player3 pool:  1p3s2346z
+label:  0
+call tile: 3s
+
+round wind:  1 | dealer:  3 | tilesInWall:  45 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [85, 372, 250, 293]
+POV wind: S | POVHand:  456m123468p45s33z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  3m8s1246z
+player1 pool:  46p7s167z
+player2 pool:  1p3s2346z
+player3 pool:  2455m2p12z
+label:  0
+call tile: 5m
+
+round wind:  1 | dealer:  0 | tilesInWall:  42 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  1 | scores [293, 75, 372, 250]
+POV wind: E | POVHand:  89m2389p11279s55z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  2455m2p12z
+player1 pool:  3m4p8s1246z
+player2 pool:  7m46p7s167z
+player3 pool:  14p3s2346z
+label:  0
+call tile: 4p
+
+round wind:  1 | dealer:  1 | tilesInWall:  67 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [273, 125, 362, 240]
+POV wind: N | POVHand:  88m12379p27s1446z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  
+player1 pool:  9s
+player2 pool:  5z
+player3 pool:  8p
+label:  1
+call tile: 8p
+
+round wind:  1 | dealer:  3 | tilesInWall:  66 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [362, 240, 273, 125]
+POV wind: S | POVHand:  35589m557p2347s6z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789p
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  5z
+player1 pool:  
+player2 pool:  1z
+player3 pool:  19s
+label:  0
+call tile: 1s
+
+round wind:  1 | dealer:  3 | tilesInWall:  62 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [362, 240, 273, 125]
+POV wind: S | POVHand:  355689m557p2347s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789p
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  56z
+player1 pool:  8p
+player2 pool:  11z
+player3 pool:  149s
+label:  0
+call tile: 4s
+
+round wind:  1 | dealer:  2 | tilesInWall:  57 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [240, 273, 125, 362]
+POV wind: W | POVHand:  368m12p11236789s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789p
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  89p
+player1 pool:  1m11z
+player2 pool:  9m149s
+player3 pool:  9m7s56z
+label:  0
+call tile: 7s
+
+round wind:  1 | dealer:  0 | tilesInWall:  55 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [125, 362, 240, 273]
+POV wind: E | POVHand:  12277m2356p3466s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789p
+player0 pool:  9m149s
+player1 pool:  9m7s56z
+player2 pool:  3m89p
+player3 pool:  1m2s11z
+label:  0
+call tile: 2s
+
+round wind:  1 | dealer:  1 | tilesInWall:  48 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  1 | scores [273, 125, 362, 230]
+POV wind: N | POVHand:  88m1237p57s44z
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789p
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player0 pool:  1m2s116z
+player1 pool:  9m9p149s2z
+player2 pool:  39m5p7s56z
+player3 pool:  3m289p1s
+label:  0
+call tile: 2p
+
+round wind:  1 | dealer:  0 | tilesInWall:  31 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  1 | scores [125, 362, 230, 273]
+POV wind: E | POVHand:  22777m356p34667s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789p
+player0 pool:  199m129p149s2z
+player1 pool:  39m14557p7s56z
+player2 pool:  139m24789p1s
+player3 pool:  1m127p2s11446z
+label:  1
+call tile: 7p
+
+round wind:  1 | dealer:  3 | tilesInWall:  21 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  1 | scores [362, 230, 273, 125]
+POV wind: S | POVHand:  23558m23345889s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789p
+player3| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222m567p
+player0 pool:  3669m145567p7s56z
+player1 pool:  139m24789p1s57z
+player2 pool:  1m123p2s114456z
+player3 pool:  199m12349p1479s27z
+label:  0
+call tile: 7s
+
+round wind:  1 | dealer:  2 | tilesInWall:  63 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [201, 273, 164, 362]
+POV wind: W | POVHand:  1133579m123579s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player0 pool:  8p
+player1 pool:  3z
+player2 pool:  34z
+player3 pool:  8m8p5z
+label:  0
+call tile: 8m
+
+round wind:  1 | dealer:  1 | tilesInWall:  62 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [273, 164, 362, 201]
+POV wind: N | POVHand:  4488m11189p48s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  3z
+player1 pool:  34z
+player2 pool:  8m8p5z
+player3 pool:  78p
+label:  0
+call tile: 7p
+
+round wind:  1 | dealer:  0 | tilesInWall:  61 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [164, 362, 201, 273]
+POV wind: E | POVHand:  5589m234447p56s2z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  34z
+player1 pool:  8m8p5z
+player2 pool:  78p
+player3 pool:  4s3z
+label:  0
+call tile: 4s
+
+round wind:  1 | dealer:  2 | tilesInWall:  55 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [201, 273, 164, 362]
+POV wind: W | POVHand:  1133579m123579s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player0 pool:  378p
+player1 pool:  9p4s3z
+player2 pool:  89m34z
+player3 pool:  8m28p2s5z
+label:  0
+call tile: 2s
+
+round wind:  1 | dealer:  0 | tilesInWall:  53 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [164, 362, 201, 273]
+POV wind: E | POVHand:  255m2344477p56s2z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  89m34z
+player1 pool:  8m28p2s5z
+player2 pool:  9m378p
+player3 pool:  9p44s3z
+label:  1
+call tile: 4s
+
+round wind:  1 | dealer:  1 | tilesInWall:  47 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [273, 164, 362, 201]
+POV wind: N | POVHand:  4468m11168p78s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  8m9p4s3z
+player1 pool:  89m9p234z
+player2 pool:  18m28p25s5z
+player3 pool:  79m378p1z
+label:  1
+call tile: 7m
+
+round wind:  1 | dealer:  0 | tilesInWall:  39 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [164, 362, 201, 273]
+POV wind: E | POVHand:  55m2344477p3s
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player0 pool:  2289m9p234z
+player1 pool:  18m28p25s256z
+player2 pool:  9m378p7s12z
+player3 pool:  89m19p4s13z
+label:  0
+call tile: 1p
+
+round wind:  1 | dealer:  1 | tilesInWall:  32 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [273, 164, 362, 201]
+POV wind: N | POVHand:  444m1168p378s
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  89m19p4s113z
+player1 pool:  2289m29p3s234z
+player2 pool:  18m28p257s1256z
+player3 pool:  9m378p79s125z
+label:  0
+call tile: 9s
+
+round wind:  1 | dealer:  1 | tilesInWall:  28 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [273, 164, 362, 201]
+POV wind: N | POVHand:  444m1168p78s4z
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  89m19p34s113z
+player1 pool:  2289m29p3s2346z
+player2 pool:  18m28p2579s1256z
+player3 pool:  9m378p799s125z
+label:  0
+call tile: 9s
+
+round wind:  1 | dealer:  1 | tilesInWall:  24 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [273, 164, 362, 201]
+POV wind: N | POVHand:  444m1168p678s
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  89m19p34s1134z
+player1 pool:  2289m29p23s2346z
+player2 pool:  18m28p2579s12566z
+player3 pool:  9m378p7799s125z
+label:  0
+call tile: 7s
+
+round wind:  1 | dealer:  2 | tilesInWall:  21 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [201, 273, 164, 362]
+POV wind: W | POVHand:  1113335m123455s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player0 pool:  9m378p7799s125z
+player1 pool:  789m19p34s1134z
+player2 pool:  22589m29p23s2346z
+player3 pool:  18m28p24579s12566z
+label:  0
+call tile: 4s
+
+round wind:  1 | dealer:  1 | tilesInWall:  20 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  1 | scores [273, 164, 362, 201]
+POV wind: N | POVHand:  444m1168p678s
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player0 pool:  789m19p34s1134z
+player1 pool:  22589m29p23s2346z
+player2 pool:  18m28p24579s12566z
+player3 pool:  9m378p57799s125z
+label:  0
+call tile: 5s
+
+round wind:  1 | dealer:  0 | tilesInWall:  11 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  1 | scores [164, 362, 191, 273]
+POV wind: E | POVHand:  56m23444577p
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player0 pool:  22589m129p23s23456z
+player1 pool:  18m28p245789s125667z
+player2 pool:  9m2378p157799s125z
+player3 pool:  789m159p234s11345z
+label:  0
+call tile: 5p
+
+round wind:  1 | dealer:  0 | tilesInWall:  7 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  1 | scores [164, 362, 191, 273]
+POV wind: E | POVHand:  56m23444577p
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player1| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player0 pool:  22589m129p236s23456z
+player1 pool:  18m28p2457889s125667z
+player2 pool:  69m2378p157799s125z
+player3 pool:  789m1559p234s11345z
+label:  0
+call tile: 5p
+
+round wind:  1 | dealer:  1 | tilesInWall:  67 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  0 | scores [149, 347, 206, 288]
+POV wind: N | POVHand:  8m39p345789s1147z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  
+player1 pool:  2p
+player2 pool:  6z
+player3 pool:  9s
+label:  0
+call tile: 9s
+
+round wind:  1 | dealer:  0 | tilesInWall:  62 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  0 | scores [347, 206, 288, 149]
+POV wind: E | POVHand:  11335779m246s56z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  2p3z
+player1 pool:  6p6z
+player2 pool:  19s
+player3 pool:  8m9p
+label:  0
+call tile: 8m
+
+round wind:  1 | dealer:  1 | tilesInWall:  59 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  0 | scores [149, 347, 206, 288]
+POV wind: N | POVHand:  337p345789s1147z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  8m9p
+player1 pool:  2p36z
+player2 pool:  2m6p6z
+player3 pool:  189s
+label:  0
+call tile: 8s
+
+round wind:  1 | dealer:  0 | tilesInWall:  26 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [347, 196, 288, 149]
+POV wind: E | POVHand:  11133567m22456s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  79m225p334556z
+player1 pool:  2267m2366p7s26z
+player2 pool:  8m11466p189s23z
+player3 pool:  89m3379p7s2457z
+label:  0
+call tile: 7s
+
+round wind:  1 | dealer:  0 | tilesInWall:  22 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [347, 196, 288, 149]
+POV wind: E | POVHand:  11133567m22456s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  79m2255p334556z
+player1 pool:  2267m2366p7s246z
+player2 pool:  8m11466p189s236z
+player3 pool:  889m3379p7s2457z
+label:  0
+call tile: 8m
+
+round wind:  1 | dealer:  1 | tilesInWall:  55 | doras:  9p | roundNum:  4 | honba sticks:  3 | riichi sticks:  0 | scores [332, 211, 273, 164]
+POV wind: N | POVHand:  344m3334467p4s45z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9m9s1z
+player1 pool:  12m67z
+player2 pool:  18p2s5z
+player3 pool:  29m26z
+label:  1
+call tile: 2m
+
+round wind:  1 | dealer:  3 | tilesInWall:  54 | doras:  9p | roundNum:  4 | honba sticks:  3 | riichi sticks:  0 | scores [273, 164, 332, 211]
+POV wind: S | POVHand:  125666789m45p5s7z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 234m
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  18p2s5z
+player1 pool:  9m26z
+player2 pool:  9m9s15z
+player3 pool:  127m67z
+label:  0
+call tile: 7m
+
+round wind:  1 | dealer:  1 | tilesInWall:  42 | doras:  9p | roundNum:  4 | honba sticks:  3 | riichi sticks:  0 | scores [332, 211, 273, 164]
+POV wind: N | POVHand:  3334467p468s
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 234m
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 888s
+player0 pool:  49m19s145z
+player1 pool:  127m67s67z
+player2 pool:  8m18p2s157z
+player3 pool:  9m17p7s267z
+label:  1
+call tile: 7s
+
+
+
+Pon States
+round wind:  0 | dealer:  0 | tilesInWall:  67 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: E | POVHand:  4579m9p599s11246z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  3z
+player1 pool:  1m
+player2 pool:  1z
+player3 pool:  
+label:  1
+call tile: e
+
+round wind:  0 | dealer:  3 | tilesInWall:  67 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: S | POVHand:  48m45689p56s2244z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 111z
+player0 pool:  1m
+player1 pool:  
+player2 pool:  
+player3 pool:  23z
+label:  1
+call tile: s
+
+round wind:  0 | dealer:  3 | tilesInWall:  64 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: S | POVHand:  4m45689p56s44z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 111z
+player0 pool:  18m
+player1 pool:  1z
+player2 pool:  2z
+player3 pool:  34z
+label:  0
+call tile: n
+
+round wind:  0 | dealer:  2 | tilesInWall:  48 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: W | POVHand:  248m56677p12345s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567m111z
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player0 pool:  29p8s16z
+player1 pool:  9p257z
+player2 pool:  9m9p3467z
+player3 pool:  189m478p3z
+label:  0
+call tile: 7p
+
+round wind:  0 | dealer:  3 | tilesInWall:  37 | doras:  8m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [250, 250, 250, 250]
+POV wind: S | POVHand:  24m456p567s44z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567m111z
+player0 pool:  189m4789p3s3z
+player1 pool:  28m29p8s156z
+player2 pool:  19p25567z
+player3 pool:  9m49p3s34467z
+label:  0
+call tile: n
+
+round wind:  0 | dealer:  0 | tilesInWall:  63 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [230, 330, 230, 210]
+POV wind: E | POVHand:  6789m4779p23s155z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9s7z
+player1 pool:  1p1s
+player2 pool:  15z
+player3 pool:  1m
+label:  1
+call tile: wd
+
+round wind:  0 | dealer:  2 | tilesInWall:  58 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [230, 210, 230, 330]
+POV wind: W | POVHand:  24578m4p36699s66z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 555z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  13z
+player1 pool:  1m2z
+player2 pool:  9p89s7z
+player3 pool:  1p1s36z
+label:  1
+call tile: gd
+
+round wind:  0 | dealer:  0 | tilesInWall:  52 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [230, 330, 230, 210]
+POV wind: E | POVHand:  67m477p23s
+player0| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789m555z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 666z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  2m9p89s17z
+player1 pool:  17p1s23z
+player2 pool:  2m3s13z
+player3 pool:  1m27z
+label:  0
+call tile: 7p
+
+round wind:  0 | dealer:  0 | tilesInWall:  50 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [230, 330, 230, 210]
+POV wind: E | POVHand:  67m477p23s
+player0| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789m555z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 666z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  2m9p89s17z
+player1 pool:  17p1s23z
+player2 pool:  2m4p3s13z
+player3 pool:  1m7p27z
+label:  0
+call tile: 7p
+
+round wind:  0 | dealer:  2 | tilesInWall:  46 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [230, 210, 230, 330]
+POV wind: W | POVHand:  4578m2p66699s
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 666z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789m555z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  2m44p3s13z
+player1 pool:  1m7p9s27z
+player2 pool:  2m69p89s17z
+player3 pool:  17p12s23z
+label:  0
+call tile: 9s
+
+round wind:  0 | dealer:  1 | tilesInWall:  34 | doras:  5m | roundNum:  2 | honba sticks:  0 | riichi sticks:  1 | scores [210, 230, 330, 230]
+POV wind: N | POVHand:  45m339p245577s57z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 2 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789m123s555z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 1 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 345m666z
+player0 pool:  1m278p9s27z
+player1 pool:  2m467799p89s17z
+player2 pool:  147p127s223z
+player3 pool:  2m2448p13s13z
+label:  0
+call tile: 7s
+
+round wind:  0 | dealer:  1 | tilesInWall:  69 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [178, 382, 230, 210]
+POV wind: N | POVHand:  67m1347p178s1334z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  
+player1 pool:  3z
+player2 pool:  
+player3 pool:  
+label:  0
+call tile: w
+
+round wind:  0 | dealer:  1 | tilesInWall:  59 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [178, 382, 230, 210]
+POV wind: N | POVHand:  67m347p17888s334z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  1p1z
+player1 pool:  2p1s3z
+player2 pool:  115z
+player3 pool:  89s4z
+label:  0
+call tile: 8s
+
+round wind:  0 | dealer:  1 | tilesInWall:  51 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [178, 382, 230, 210]
+POV wind: N | POVHand:  267m3347p7888s33z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  1p1s14z
+player1 pool:  3m2p1s35z
+player2 pool:  19p115z
+player3 pool:  89s345z
+label:  0
+call tile: w
+
+round wind:  0 | dealer:  0 | tilesInWall:  50 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [382, 230, 210, 178]
+POV wind: E | POVHand:  89m688p22444s677z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  3m2p1s35z
+player1 pool:  19p115z
+player2 pool:  89s345z
+player3 pool:  1p12s14z
+label:  1
+call tile: 2s
+
+round wind:  0 | dealer:  0 | tilesInWall:  48 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [382, 230, 210, 178]
+POV wind: E | POVHand:  89m88p444s677z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222s
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  3m26p1s35z
+player1 pool:  19p3s115z
+player2 pool:  89s3457z
+player3 pool:  1p1s14z
+label:  1
+call tile: rd
+
+round wind:  0 | dealer:  3 | tilesInWall:  29 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [230, 210, 178, 382]
+POV wind: S | POVHand:  1122678m4556p67s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 2 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 222s777z
+player0 pool:  129p133s11456z
+player1 pool:  3m19p789s3456z
+player2 pool:  1m117p17s147z
+player3 pool:  3m269p1369s356z
+label:  0
+call tile: 1m
+
+round wind:  0 | dealer:  2 | tilesInWall:  44 | doras:  14s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [168, 372, 250, 200]
+POV wind: W | POVHand:  56m1133468p668s3z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 1 | #pon= 0 | #kan= 1 | #isOpen= 1 | #isRiichi= 0 | melds: 123m6666z
+player0 pool:  38m19s24z
+player1 pool:  2899m2s5z
+player2 pool:  8m12p257z
+player3 pool:  79m58p6s27z
+label:  0
+call tile: 6s
+
+round wind:  0 | dealer:  0 | tilesInWall:  40 | doras:  14s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [250, 200, 168, 372]
+POV wind: E | POVHand:  55667m44577p455s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 1 | #isOpen= 1 | #isRiichi= 0 | melds: 123m6666z
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  8m12p2557z
+player1 pool:  79m458p6s27z
+player2 pool:  38m19s234z
+player3 pool:  22899m2s5z
+label:  1
+call tile: 4p
+
+round wind:  0 | dealer:  2 | tilesInWall:  39 | doras:  14s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [168, 372, 250, 200]
+POV wind: W | POVHand:  56m11333468p668s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 444p
+player3| #chi= 1 | #pon= 0 | #kan= 1 | #isOpen= 1 | #isRiichi= 0 | melds: 123m6666z
+player0 pool:  38m19s234z
+player1 pool:  22899m2s5z
+player2 pool:  8m12p4s2557z
+player3 pool:  79m58p66s27z
+label:  0
+call tile: 6s
+
+round wind:  1 | dealer:  3 | tilesInWall:  54 | doras:  6m | roundNum:  1 | honba sticks:  0 | riichi sticks:  0 | scores [85, 372, 250, 293]
+POV wind: S | POVHand:  3456m1234p458s33z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  1246z
+player1 pool:  4p167z
+player2 pool:  1p236z
+player3 pool:  25m2p2z
+label:  0
+call tile: w
+
+round wind:  1 | dealer:  2 | tilesInWall:  66 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  0 | scores [240, 273, 125, 362]
+POV wind: W | POVHand:  368m12p11236789s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789p
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  
+player1 pool:  1z
+player2 pool:  19s
+player3 pool:  5z
+label:  0
+call tile: 1s
+
+round wind:  1 | dealer:  0 | tilesInWall:  21 | doras:  4s | roundNum:  2 | honba sticks:  0 | riichi sticks:  1 | scores [125, 362, 230, 273]
+POV wind: E | POVHand:  22777m34667s
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 567p
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 789p
+player0 pool:  199m12349p149s27z
+player1 pool:  3669m145567p7s56z
+player2 pool:  1239m24789p1s57z
+player3 pool:  1m123p2s114456z
+label:  1
+call tile: 2m
+
+round wind:  1 | dealer:  3 | tilesInWall:  63 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [362, 201, 273, 164]
+POV wind: S | POVHand:  248m56p12788s277z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  8p5z
+player1 pool:  8p7z
+player2 pool:  3z
+player3 pool:  34z
+label:  1
+call tile: rd
+
+round wind:  1 | dealer:  1 | tilesInWall:  63 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [273, 164, 362, 201]
+POV wind: N | POVHand:  4488m11189p48s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  3z
+player1 pool:  34z
+player2 pool:  8m8p5z
+player3 pool:  8p
+label:  0
+call tile: 8m
+
+round wind:  1 | dealer:  1 | tilesInWall:  56 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [273, 164, 362, 201]
+POV wind: N | POVHand:  4488m11168p78s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9p4s3z
+player1 pool:  89m34z
+player2 pool:  8m28p5z
+player3 pool:  378p
+label:  0
+call tile: 8m
+
+round wind:  1 | dealer:  2 | tilesInWall:  52 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [201, 273, 164, 362]
+POV wind: W | POVHand:  1133357m123579s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player0 pool:  9m378p
+player1 pool:  9p4s3z
+player2 pool:  89m234z
+player3 pool:  18m28p2s5z
+label:  0
+call tile: 1m
+
+round wind:  1 | dealer:  1 | tilesInWall:  51 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [273, 164, 362, 201]
+POV wind: N | POVHand:  4488m11168p78s11z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9p4s3z
+player1 pool:  89m234z
+player2 pool:  18m28p2s5z
+player3 pool:  9m378p1z
+label:  0
+call tile: e
+
+round wind:  1 | dealer:  1 | tilesInWall:  18 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  1 | scores [273, 164, 362, 191]
+POV wind: N | POVHand:  444m1168p678s
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player2| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player0 pool:  789m19p234s1134z
+player1 pool:  22589m129p23s2346z
+player2 pool:  18m28p24579s12566z
+player3 pool:  9m378p57799s125z
+label:  0
+call tile: 1p
+
+round wind:  1 | dealer:  3 | tilesInWall:  12 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  1 | scores [362, 191, 273, 164]
+POV wind: S | POVHand:  245m356p1188s
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player0 pool:  18m28p245789s125667z
+player1 pool:  9m2378p157799s125z
+player2 pool:  789m19p234s11345z
+player3 pool:  22589m129p23s23456z
+label:  0
+call tile: 1s
+
+round wind:  1 | dealer:  3 | tilesInWall:  63 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  0 | scores [206, 288, 149, 347]
+POV wind: S | POVHand:  22346m23888p117s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  6p6z
+player1 pool:  19s
+player2 pool:  9p
+player3 pool:  2p3z
+label:  0
+call tile: 1s
+
+round wind:  1 | dealer:  2 | tilesInWall:  58 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  0 | scores [288, 149, 347, 206]
+POV wind: W | POVHand:  48m1444779p5s356z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  189s
+player1 pool:  8m79p
+player2 pool:  2p36z
+player3 pool:  2m6p6z
+label:  0
+call tile: 7p
+
+round wind:  1 | dealer:  2 | tilesInWall:  6 | doras:  3s | roundNum:  3 | honba sticks:  2 | riichi sticks:  1 | scores [288, 149, 347, 196]
+POV wind: W | POVHand:  4445m4477899p15s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player0 pool:  8m113466p189s235677z
+player1 pool:  3889m334579p7s24457z
+player2 pool:  336779m2255p334556z
+player3 pool:  22667m12366p7s22346z
+label:  1
+call tile: 4p
+
+round wind:  1 | dealer:  2 | tilesInWall:  46 | doras:  9p | roundNum:  4 | honba sticks:  3 | riichi sticks:  0 | scores [164, 332, 211, 273]
+POV wind: W | POVHand:  68m22467p567788s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 234m
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9m1p267z
+player1 pool:  49m19s15z
+player2 pool:  127m67s67z
+player3 pool:  8m18p2s57z
+label:  0
+call tile: 7s
+
+round wind:  1 | dealer:  2 | tilesInWall:  42 | doras:  9p | roundNum:  4 | honba sticks:  3 | riichi sticks:  0 | scores [164, 332, 211, 273]
+POV wind: W | POVHand:  68m22456p567788s
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 234m
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  9m17p267z
+player1 pool:  49m19s145z
+player2 pool:  127m678s67z
+player3 pool:  8m18p2s157z
+label:  1
+call tile: 8s
+
+round wind:  1 | dealer:  1 | tilesInWall:  23 | doras:  9p | roundNum:  4 | honba sticks:  3 | riichi sticks:  0 | scores [332, 211, 273, 164]
+POV wind: N | POVHand:  3334467p
+player0| #chi= 2 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 234m678s
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 888s
+player0 pool:  349m12349s1455z
+player1 pool:  1227m12679s167z
+player2 pool:  12589m18p23s157z
+player3 pool:  89m137p59s2667z
+label:  0
+call tile: 3p
+
+
+
+Kan States
+round wind:  0 | dealer:  1 | tilesInWall:  59 | doras:  5z | roundNum:  3 | honba sticks:  0 | riichi sticks:  0 | scores [178, 382, 230, 210]
+POV wind: N | POVHand:  67m347p17888s334z
+player0| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  1p1z
+player1 pool:  2p1s3z
+player2 pool:  115z
+player3 pool:  89s4z
+label:  0
+call tile: 8s
+
+round wind:  0 | dealer:  3 | tilesInWall:  49 | doras:  4s | roundNum:  4 | honba sticks:  1 | riichi sticks:  0 | scores [200, 168, 372, 250]
+POV wind: S | POVHand:  57p22456s6666z
+player0| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 123m
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player0 pool:  79m8p27z
+player1 pool:  38m9s24z
+player2 pool:  289m2s5z
+player3 pool:  8m12p57z
+label:  1
+call tile: gd
+
+round wind:  1 | dealer:  3 | tilesInWall:  41 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [362, 201, 273, 164]
+POV wind: S | POVHand:  24m56p11788s27z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player0 pool:  18m28p25s56z
+player1 pool:  9m378p7s1z
+player2 pool:  89m9p4s13z
+player3 pool:  2289m9p234z
+label:  0
+call tile: rd
+
+round wind:  1 | dealer:  3 | tilesInWall:  37 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [362, 201, 273, 164]
+POV wind: S | POVHand:  24m56p117888s7z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player0 pool:  18m28p25s256z
+player1 pool:  9m378p7s12z
+player2 pool:  89m19p4s13z
+player3 pool:  2289m9p3s234z
+label:  0
+call tile: rd
+
+round wind:  1 | dealer:  3 | tilesInWall:  33 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [362, 201, 273, 164]
+POV wind: S | POVHand:  24m56p11888s17z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player0 pool:  18m28p257s256z
+player1 pool:  9m378p7s125z
+player2 pool:  89m19p4s113z
+player3 pool:  2289m29p3s234z
+label:  0
+call tile: rd
+
+round wind:  1 | dealer:  3 | tilesInWall:  29 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [362, 201, 273, 164]
+POV wind: S | POVHand:  24m56p118889s7z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player0 pool:  18m28p257s1256z
+player1 pool:  9m378p79s125z
+player2 pool:  89m19p34s113z
+player3 pool:  2289m29p3s2346z
+label:  0
+call tile: rd
+
+round wind:  1 | dealer:  3 | tilesInWall:  25 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [362, 201, 273, 164]
+POV wind: S | POVHand:  24m56p11888s67z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player0 pool:  18m28p2579s1256z
+player1 pool:  9m378p799s125z
+player2 pool:  89m19p34s1134z
+player3 pool:  2289m29p23s2346z
+label:  0
+call tile: rd
+
+round wind:  1 | dealer:  3 | tilesInWall:  21 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  0 | scores [362, 201, 273, 164]
+POV wind: S | POVHand:  24m56p114888s7z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player0 pool:  18m28p2579s12566z
+player1 pool:  9m378p7799s125z
+player2 pool:  789m19p34s1134z
+player3 pool:  22589m29p23s2346z
+label:  0
+call tile: rd
+
+round wind:  1 | dealer:  3 | tilesInWall:  17 | doras:  3m | roundNum:  2 | honba sticks:  1 | riichi sticks:  1 | scores [362, 191, 273, 164]
+POV wind: S | POVHand:  245m56p11888s7z
+player0| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 777z
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 1 | melds: 
+player2| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 678m
+player3| #chi= 1 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 456s
+player0 pool:  18m28p24579s12566z
+player1 pool:  9m378p57799s125z
+player2 pool:  789m19p234s1134z
+player3 pool:  22589m129p23s2346z
+label:  0
+call tile: rd
+
+round wind:  1 | dealer:  1 | tilesInWall:  23 | doras:  9p | roundNum:  4 | honba sticks:  3 | riichi sticks:  0 | scores [332, 211, 273, 164]
+POV wind: N | POVHand:  3334467p
+player0| #chi= 2 | #pon= 0 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 234m678s
+player1| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player2| #chi= 0 | #pon= 0 | #kan= 0 | #isOpen= 0 | #isRiichi= 0 | melds: 
+player3| #chi= 0 | #pon= 1 | #kan= 0 | #isOpen= 1 | #isRiichi= 0 | melds: 888s
+player0 pool:  349m12349s1455z
+player1 pool:  1227m12679s167z
+player2 pool:  12589m18p23s157z
+player3 pool:  89m137p59s2667z
+label:  0
+call tile: 3p
+
