@@ -113,7 +113,7 @@ def printTestToFile(gameNum):
 
 #statetype (0-4) 0 - riichi, 1 - chi, 2 - pon, 3- kan
 # flattens the state matrices, appends the label, and saves to file
-def saveFileForState(game_states: np.ndarray,
+def saveFileForStateType(game_states: np.ndarray,
                 game_id: str,
                 statetype: int, 
                 year: int):
@@ -153,10 +153,10 @@ def saveToFile(log, year):
 
     game_riichi, game_chi, game_pon, game_kan = gameLogToMatrix(game)
 
-    saveFileForState(game_riichi, game_id, 0, year)
-    saveFileForState(game_chi, game_id, 1 , year)
-    saveFileForState(game_pon, game_id, 2 , year) 
-    saveFileForState(game_kan, game_id, 3 , year)
+    saveFileForStateType(game_riichi, game_id, 0, year)
+    saveFileForStateType(game_chi, game_id, 1 , year)
+    saveFileForStateType(game_pon, game_id, 2 , year) 
+    saveFileForStateType(game_kan, game_id, 3 , year)
 
 
 def saveFilesPerYear(year, numFiles = None):

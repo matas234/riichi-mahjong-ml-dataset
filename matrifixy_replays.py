@@ -96,7 +96,7 @@ def gameLogToMatrix(game_log):
 
 
     def handleMeldsSelf():
-        draw_player = matrix.getLastDrawPlayer()
+        draw_player = matrix.last_draw_player
 
         is_next_move_call = (game_log[index+1][0] == "N")
 
