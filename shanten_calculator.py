@@ -85,12 +85,14 @@ def splitsNoGroups(hand):
 
     return maxTaatsuNum, maxPairPresence
 
+cache_hit = 0
+cache_miss = 0
 
 def splits(hand, groupNum=0, pair_presence=False):  
     ## checks if hand is cached
-    # if tuple(hand) in splits_groups_cache:
-    #     (cached_group_num, cached_tatsu_num, cached_pair_presence) = splits_groups_cache[tuple(hand)]
-    #     return (cached_group_num + groupNum, cached_tatsu_num, cached_pair_presence or pair_presence)
+    if tuple(hand) in splits_groups_cache:
+        (cached_group_num, cached_tatsu_num, cached_pair_presence) = splits_groups_cache[tuple(hand)]
+        return (cached_group_num + groupNum, cached_tatsu_num, cached_pair_presence or pair_presence)
         
     max_grp_num = groupNum
     max_tatsu_num = 0
@@ -120,7 +122,7 @@ def splits(hand, groupNum=0, pair_presence=False):
         max_tatsu_num, max_pair_presence = splitsNoGroups(hand)
 
 
-    # splits_groups_cache[tuple(hand)] = (max_grp_num, max_tatsu_num, max_pair_presence)
+    splits_groups_cache[tuple(hand)] = (max_grp_num - groupNum, max_tatsu_num, max_pair_presence)
 
     return max_grp_num, max_tatsu_num, max_pair_presence
 

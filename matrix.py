@@ -5,39 +5,41 @@ from shanten_calculator import calculateShanten
 
 class Matrix:     
     def __init__(self):
-        self.gameState = np.zeros((11, 34), dtype=np.int16)
-        self.privateHands = [[0]*34 for _ in range(4)]
-        self.playerMelds = [[0]*34 for _ in range(4)]
-        self.playerPool = [[0]*34 for _ in range(4)]
+        self.game_state = np.zeros((11, 34), dtype=int)
+        self.privateHands = [[0]*34 , [0]*34 , [0]*34 , [0]*34]
+        self.player_melds = [[0]*34 , [0]*34 , [0]*34 , [0]*34]
+        self.player_pools = [[0]*34 , [0]*34 , [0]*34 , [0]*34]
         self.doras = [0]*34
-        self.Riichi = [False, False, False, False]
+        self.is_in_riichi = [False, False, False, False]
 
         # metadata
-        self.roundWind = 0   #0:E, 1:S, ...
+        self.round_wind = 0   #0:E, 1:S, ...
         self.playerScores = [0, 0, 0, 0]
-        self.playerWinds = [0,1,2,3]
-        self.honbaSticks = 0
-        self.roundWind = 0
-        self.roundDealer = 0
-        self.wallTiles = 70      # technically 69 but the dataset considers dealer 14th tile as a draw
-        self.chisNum = [0,0,0,0]    #
-        self.ponsNum = [0,0,0,0]    # num of melds for each player
-        self.kansNum = [0,0,0,0]    #
+        self.player_winds = [0,1,2,3]
+        self.honba_sticks = 0
+        self.round_wind = 0
+        self.round_dealer = 0
+        self.wall_tiles = 70      # technically 69 but the dataset considers dealer 14th tile as a draw
+        self.chis_num = [0,0,0,0]    #
+        self.pons_num = [0,0,0,0]    # num of melds for each player
+        self.kans_num = [0,0,0,0]    #
 
         #used to keep track of things
-        self.lastDrawPlayer = 0
-        self.lastDrawTile = 0       
-        self.lastDiscardPlayer = 0
-        self.lastDiscardTile = 0
-        self.closedKans = [0,0,0,0]       
-        self.Closed = [True, True, True, True]  
-        self.playerPons = [[], [], [], []]        #pons for each player, need for closed kan/chankan 
+        self.last_draw_player = 0
+        self.last_draw_tile = 0       
+        self.last_discard_player = 0
+        self.last_discard_tile = 0
+        self.closed_kans = [0,0,0,0]       
+        self.is_closed = [True, True, True, True]  
+        self.player_pon_tiles = [[], [], [], []]   
+
+
 
     def getRiichi(self, player):   #needed
-        return self.Riichi[player]
+        return self.is_in_riichi[player]
     
     def setRiichi(self, player):
-        self.Riichi[player] = True
+        self.is_in_riichi[player] = True
 
     # builds matrix for POV player
     # forMeld   Riichi: False , Meld: true   (only difference is last discard)   
@@ -46,88 +48,88 @@ class Matrix:
         player_ordering = [i%4 for i in range(player,player+4)]
 
         #round wind
-        self.gameState[0][0] = self.roundWind
+        self.game_state[0][0] = self.round_wind
         #dealer
-        self.gameState[0][1] = player_ordering.index(self.roundDealer)
+        self.game_state[0][1] = player_ordering.index(self.round_dealer)
         #pov wind
-        self.gameState[0][2] = self.playerWinds[player]        
+        self.game_state[0][2] = self.player_winds[player]        
         #num of honba sticks
-        self.gameState[0][3] = self.honbaSticks
+        self.game_state[0][3] = self.honba_sticks
         #num of riichi sticks
-        self.gameState[0][4] = self.Riichi.count(True)  
+        self.game_state[0][4] = self.is_in_riichi.count(True)  
         #num of tiles left in wall (kans might mess this up need to check)
-        self.gameState[0][5] = self.wallTiles
+        self.game_state[0][5] = self.wall_tiles
         #padding
-        self.gameState[0][30:33] = -128
+        self.game_state[0][30:33] = -128
         #round number
-        self.gameState[0][33] = self.roundDealer + 1    
+        self.game_state[0][33] = self.round_dealer + 1    
         
         #pov hand
-        self.gameState[2] = self.privateHands[player]
+        self.game_state[2] = self.privateHands[player]
 
         for index,player in enumerate(player_ordering):
             #melds
-            self.gameState[3+index] = self.playerMelds[player]
+            self.game_state[3+index] = self.player_melds[player]
             #pools
-            self.gameState[7+index] = self.playerPool[player]
+            self.game_state[7+index] = self.player_pools[player]
 
             #scores
-            self.gameState[0][6+index] = self.playerScores[player]
+            self.game_state[0][6+index] = self.playerScores[player]
             #riichis
-            self.gameState[0][10+index] = 1 if self.Riichi[player] else 0
+            self.game_state[0][10+index] = 1 if self.is_in_riichi[player] else 0
             #number of chis
-            self.gameState[0][14+index] = self.chisNum[player]
+            self.game_state[0][14+index] = self.chis_num[player]
             #number of pons
-            self.gameState[0][18+index] = self.ponsNum[player]
+            self.game_state[0][18+index] = self.pons_num[player]
             #number of kans
-            self.gameState[0][22+index] = self.kansNum[player]
+            self.game_state[0][22+index] = self.kans_num[player]
             # 0: closed, 1: open
-            self.gameState[0][26+index] = 0 if self.Closed[player] else 1
+            self.game_state[0][26+index] = 0 if self.is_closed[player] else 1
 
 
         # sets call tile for the meld matrices
         if forMeld:
             if forClosedMeld:
-                self.gameState[0][30] = callTile
+                self.game_state[0][30] = callTile
             else:
-                self.gameState[0][30] = self.lastDiscardTile
+                self.game_state[0][30] = self.last_discard_tile
             
 
     def getMatrix(self):  
-        return self.gameState
+        return self.game_state
     
     def addPlayerPonTiles(self, player, tiles):
-        self.playerPons[player].append(tiles[0])
+        self.player_pon_tiles[player].append(tiles[0])
 
     def decPlayerPonTiles(self, player, tiles):
-        self.playerPons[player].remove(tiles[0])
+        self.player_pon_tiles[player].remove(tiles[0])
 
     def getPlayerPonTiles(self, player):
-        return self.playerPons[player]
+        return self.player_pon_tiles[player]
 
     def addClosedKan(self, player):
-        self.closedKans[player] += 1           
+        self.closed_kans[player] += 1           
 
     def getClosedKan(self, player):  #needed
-        return self.closedKans[player]
+        return self.closed_kans[player]
 
     def addPlayerPool(self, player, tile):
-        self.playerPool[player][tile] += 1
+        self.player_pools[player][tile] += 1
 
     def decPlayerPool(self, player, tile):
-        self.playerPool[player][tile] -= 1
+        self.player_pools[player][tile] -= 1
     
     def addChi(self, player):
-        self.chisNum[player] += 1
+        self.chis_num[player] += 1
 
     def addPon(self, player):
-        self.ponsNum[player] += 1
+        self.pons_num[player] += 1
 
     def decPon(self, player):
-        self.ponsNum[player] -= 1
+        self.pons_num[player] -= 1
 
     def addKan(self, player):
-        self.kansNum[player] += 1
+        self.kans_num[player] += 1
 
     def addMeldNum(self, player, meldType):
         if meldType == 0:
@@ -138,7 +140,7 @@ class Matrix:
             self.addKan(player)    
 
     def getMeldNum(self, player):
-        return self.chisNum[player] + self.ponsNum[player] + self.kansNum[player]
+        return self.chis_num[player] + self.pons_num[player] + self.kans_num[player]
 
     # initialises starting hands for each player
     def initialisePrivateHands(self, hands):
@@ -158,25 +160,25 @@ class Matrix:
     
     # this is dependant on roundDealer so should only be called once the dealer is set
     def setPlayerWinds(self):
-        dealer = self.roundDealer
-        self.playerWinds = [(i-dealer)%4 for i in range(4)]
+        dealer = self.round_dealer
+        self.player_winds = [(i-dealer)%4 for i in range(4)]
 
     def setRoundWind(self, wind):
-        self.roundWind = wind
+        self.round_wind = wind
     
     def setDealer(self, dealer):
-        self.roundDealer = dealer
+        self.round_dealer = dealer
 
     #input amount 
     def setHonbaSticks(self, amount):
-        self.honbaSticks = amount
+        self.honba_sticks = amount
     
     #decrement wall tiles by one
     def decWallTiles(self):
-        self.wallTiles -=1
+        self.wall_tiles -=1
     
     def getWallTiles(self):
-        return self.wallTiles
+        return self.wall_tiles
     
     def getPlayerScores(self):
         return self.playerScores
@@ -191,45 +193,45 @@ class Matrix:
             print("Invalid Player")
     
     def setLastDiscardPlayer(self, player):
-        self.lastDiscardPlayer = player
+        self.last_discard_player = player
 
     def getLastDiscardPlayer(self):
-        return self.lastDiscardPlayer
+        return self.last_discard_player
 
     def setLastDiscardTile(self, tile):
-        self.lastDiscardTile = tile
+        self.last_discard_tile = tile
 
     def getLastDiscardTile(self):
-        return self.lastDiscardTile
+        return self.last_discard_tile
     
     def setLastDrawPlayer(self, player):
-        self.lastDrawPlayer = player
+        self.last_draw_player = player
 
     def getLastDrawPlayer(self):
-        return self.lastDrawPlayer
+        return self.last_draw_player
     
     def setLastDrawTile(self, tile):
-        self.lastDrawTile = tile
+        self.last_draw_tile = tile
 
     def getLastDrawTile(self):
-        return self.lastDrawTile
+        return self.last_draw_tile
 
     #input tile (0-34)
     def addDoraIndicator(self, doraIndicator):
-        self.gameState[1][doraIndicator] += 1
+        self.game_state[1][doraIndicator] += 1
             
     def canPon(self, player):
-        tile = self.lastDiscardTile
+        tile = self.last_discard_tile
         return (self.privateHands[player][tile] >= 2) and not self.getRiichi(player)
 
     def canKan(self, player):
-        tile = self.lastDiscardTile
+        tile = self.last_discard_tile
         return (self.privateHands[player][tile] == 3) and not self.getRiichi(player)
 
     def canChi(self, player): 
         
-        tile = self.lastDiscardTile
-        fromPlayer = self.lastDiscardPlayer
+        tile = self.last_discard_tile
+        fromPlayer = self.last_discard_player
 
         #checks whether it's a honour tile, that the call is from the player before in ordering, and that Riichi has not been called
         if (tile//9 == 3 or 
@@ -282,7 +284,7 @@ class Matrix:
 
         for tile in range(34):
             playerHasTile_inHand = (hand[tile]>0)
-            playerHasTile_inPon = (tile in self.playerPons[player])
+            playerHasTile_inPon = (tile in self.player_pon_tiles[player])
 
             if playerHasTile_inHand and playerHasTile_inPon:
                 canChackan = True
@@ -292,17 +294,17 @@ class Matrix:
         return canChackan , callTile
 
     def canRiichi(self, player):
-        return (not self.Riichi[player] and
-                self.Closed[player] and
-                calculateShanten(hand=self.privateHands[player], numCalledMelds=self.closedKans[player]) <= 0 and
-                self.wallTiles >= 4)
+        return (not self.is_in_riichi[player] and
+                self.is_closed[player] and
+                calculateShanten(hand=self.privateHands[player], numCalledMelds=self.closed_kans[player]) <= 0 and
+                self.wall_tiles >= 4)
 
 
     def setOpen(self, player):
-        self.Closed[player] = False
+        self.is_closed[player] = False
     
     def getClosed(self, player):
-        return self.Closed[player]
+        return self.is_closed[player]
 
     def handleDraw(self, player, tile):
         self.setLastDrawPlayer(player)   
@@ -347,7 +349,7 @@ class Matrix:
         if meldType == 3: 
             self.decPlayerPonTiles(player, meldTiles)
             self.decPon(player)
-            self.playerMelds[player][ meldTiles[0] ] = 4
+            self.player_melds[player][ meldTiles[0] ] = 4
             self.addKan(player)
             self.privateHands[player][ meldTiles[0] ] = 0
        
@@ -355,16 +357,16 @@ class Matrix:
         elif isClosedCall:
             self.privateHands[player][ meldTiles[0] ] = 0
             self.addKan(player)
-            self.playerMelds[player][ meldTiles[0] ] = 4
+            self.player_melds[player][ meldTiles[0] ] = 4
 
         # handles regular call
         else:
             self.setOpen(player)
             # adds meld tiles to meld attribute
             for tile in meldTiles:
-                self.playerMelds[player][tile] += 1 
+                self.player_melds[player][tile] += 1 
 
-            called = self.lastDiscardTile
+            called = self.last_discard_tile
             meldTiles.remove(called)  
             #removes tiles from player hand
             for tile in meldTiles:

@@ -168,13 +168,10 @@ def saveToFile(log, year):
 
 
 def saveFilesPerYear(year, numFiles = None):
-
     dbfile = 'es4p.db'
 
     con = sqlite3.connect(dbfile)
-
     cur = con.cursor()
-
     res = cur.execute(f"SELECT COUNT(*) FROM logs WHERE year = {year}")
 
     numGames = res.fetchone()[0]
@@ -185,7 +182,6 @@ def saveFilesPerYear(year, numFiles = None):
 
     if numFiles:
         numGames = numFiles
-        
 
     for i in tqdm(range(numGames), desc="Processing games"):
         log = res.fetchone()
@@ -205,20 +201,22 @@ def saveAll():
         #IMPORTANT - if you don't include this parameter it will save EVERYTHING
         saveFilesPerYear(year)
 
+
 printTestToFile(0)
 
 
-# start_time = time.time()
 
-# start_time = time.time()
+start_time = time.time()
 
-# saveAll()
+start_time = time.time()
 
-# end_time = time.time()
+saveAll()
 
-# duration = end_time - start_time
+end_time = time.time()
 
-# print(f"saveAll() took {duration:.4f} seconds")
+duration = end_time - start_time
+
+print(f"saveAll() took {duration:.4f} seconds")
 
 
 
