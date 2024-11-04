@@ -31,7 +31,10 @@ class Matrix:
         self.last_discard_tile = 0
         self.closed_kans = [0,0,0,0]       
         self.is_closed = [True, True, True, True]  
-        self.player_pon_tiles = [[], [], [], []]   
+        self.player_pon_tiles = [[], [], [], []]  
+
+        
+         
 
 
 
@@ -296,7 +299,7 @@ class Matrix:
     def canRiichi(self, player):
         return (not self.is_in_riichi[player] and
                 self.is_closed[player] and
-                calculateShanten(hand=self.privateHands[player], numCalledMelds=self.closed_kans[player]) <= 0 and
+                calculateShanten(hand=self.privateHands[player], called_melds_num=self.closed_kans[player]) <= 0 and
                 self.wall_tiles >= 4)
 
 

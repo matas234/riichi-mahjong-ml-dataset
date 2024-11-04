@@ -18,14 +18,18 @@ discardDic = {
     'G': 3
 }
 
+matrix = Matrix()
 
 
 
-def matrixifymelds(arr):
 
+def gameLogToMatrix(game_log):
     chiArr = []
     ponArr = []
     kan_arr = []
+    riichi_arr = []
+
+
     def handleMeldsOtherPlayers():
         discard_player = matrix.getLastDiscardPlayer()
         tile = matrix.getLastDiscardTile()
@@ -36,7 +40,7 @@ def matrixifymelds(arr):
         # true if next call is Pon or Kan; they get priority over chi.
         is_pon_in_priority = lambda player: False
        
-        next_move  = arr[index+1]
+        next_move  = game_log[index+1]
         is_next_move_call = (next_move[0] == "N")
 
         is_next_call_chi, is_next_call_pon, is_next_call_kan = False, False, False
@@ -94,7 +98,7 @@ def matrixifymelds(arr):
     def handleMeldsSelf():
         draw_player = matrix.getLastDrawPlayer()
 
-        is_next_move_call = (arr[index+1][0] == "N")
+        is_next_move_call = (game_log[index+1][0] == "N")
 
         closed_kan_label, chankan_label = 0, 0
 
@@ -123,7 +127,20 @@ def matrixifymelds(arr):
             kan_arr.append([np.copy(matrix.getMatrix()), chankan_label])
 
 
-    for index,item in enumerate(arr): 
+    def handleRiichi(player):
+        if matrix.canRiichi(player):
+            riichiLabel = 0
+            matrix.buildMatrix(player=player)
+
+            # if riichis then sets to riichi
+            if game_log[index+1][0] == "REACH": 
+                riichiLabel = 1
+                matrix.setRiichi(player)
+
+            riichi_arr.append([np.copy(matrix.getMatrix()), riichiLabel]) 
+
+
+    for index,item in enumerate(game_log): 
         if item[1]:
             attr = item[1]
 
@@ -135,18 +152,16 @@ def matrixifymelds(arr):
             elif item[0] == "N":
                 meld_info = decodeMeld(attr["m"])
                 player = int( attr["who"] )
-                is_closed_call = (player == matrix.getLastDrawPlayer()) and arr[index-2][0] != "N"
+                is_closed_call = (player == matrix.getLastDrawPlayer()) and game_log[index-2][0] != "N"
 
                 matrix.handleMeld(player, meld_info, is_closed_call)
           
             elif item[0] == "DORA":
                 matrix.addDoraIndicator( int(attr["hai"]) // 4 )
             
-            elif item[0] == "REACH":
-                matrix.setRiichi( matrix.getLastDrawPlayer() )
-                if attr["step"] == "2":
-                    points = [int(i) for i in attr["ten"].split(",")]
-                    matrix.setPlayerScore(points) 
+            elif item[0] == "REACH" and attr["step"] == "2":
+                points = [int(i) for i in attr["ten"].split(",")]
+                matrix.setPlayerScore(points)
 
         else:
             attr = item[0]        # attr in the form of, say, T46
@@ -157,7 +172,8 @@ def matrixifymelds(arr):
             if moveIndex in drawDic:
                 cur_player = drawDic[moveIndex]
                 matrix.handleDraw(cur_player, tile)
-                handleMeldsSelf()    
+                handleMeldsSelf()
+                handleRiichi(cur_player)    
 
             #### DISCARDS ####  
             else:
@@ -165,72 +181,73 @@ def matrixifymelds(arr):
                 matrix.handleDiscard(cur_player, tile)
                 matrix.addPlayerPool(cur_player, tile)  # Always adds pool in this function and if the tile gets called then handleMeldsOtherPlayers() deletes it from pool
                 handleMeldsOtherPlayers()
+
+
+    return riichi_arr, chiArr, ponArr, kan_arr
+
+
+
+
+# def matrixify(arr):
+#     riichi_arr = []
+
+#     #riichi conditions are: the player is not already in riichi, hand is closed, is in tenpai, and >=4 tiles in live wall (rule)
+#     #checks for riichi conditions, and then appends to reachArr if passes necessary conditions
+#     def handleRiichi(player):
+#         if matrix.canRiichi(player):
+#             riichiLabel = 0
+#             matrix.buildMatrix(player=player)
+
+#             # if riichis then sets to riichi
+#             if arr[index+1][0] == "REACH": 
+#                 riichiLabel = 1
+#                 matrix.setRiichi(player)
+
+#             riichi_arr.append([np.copy(matrix.getMatrix()), riichiLabel]) 
+
+
+#     for index,item in enumerate(arr): 
+#         if item[1]:
+#             attr = item[1]
+
+#             if item[0] == "INIT":
+#                 #clears matrix attributes
+#                 matrix = Matrix() 
+#                 #initializes start of game 
+#                 matrix.initialiseGame(attr)
+
+#             elif item[0] == "N":
+#                 meldInfo = decodeMeld(attr["m"])
+#                 player = int( attr["who"] )
+#                 isClosedKan = (player == matrix.getLastDrawPlayer()) and arr[index-2][0] != "N"
                 
-    return chiArr, ponArr, kan_arr
-
-
-
-
-def matrixify(arr):
-    riichi_arr = []
-
-    #riichi conditions are: the player is not already in riichi, hand is closed, is in tenpai, and >=4 tiles in live wall (rule)
-    #checks for riichi conditions, and then appends to reachArr if passes necessary conditions
-    def handleRiichi(player):
-        if matrix.canRiichi(player):
-            riichiLabel = 0
-            matrix.buildMatrix(player=player)
-
-            # if riichis then sets to riichi
-            if arr[index+1][0] == "REACH": 
-                riichiLabel = 1
-                matrix.setRiichi(player)
-
-            riichi_arr.append([np.copy(matrix.getMatrix()), riichiLabel]) 
-
-
-    for index,item in enumerate(arr): 
-        if item[1]:
-            attr = item[1]
-
-            if item[0] == "INIT":
-                #clears matrix attributes
-                matrix = Matrix() 
-                #initializes start of game 
-                matrix.initialiseGame(attr)
-
-            elif item[0] == "N":
-                meldInfo = decodeMeld(attr["m"])
-                player = int( attr["who"] )
-                isClosedKan = (player == matrix.getLastDrawPlayer()) and arr[index-2][0] != "N"
-                
-                matrix.handleMeld(player, meldInfo, isClosedKan)
+#                 matrix.handleMeld(player, meldInfo, isClosedKan)
  
-            # if new dora then adds it
-            elif item[0] == "DORA":
-                matrix.addDoraIndicator( int(attr["hai"]) // 4 )
+#             # if new dora then adds it
+#             elif item[0] == "DORA":
+#                 matrix.addDoraIndicator( int(attr["hai"]) // 4 )
 
-            elif (item[0] == "REACH") and attr["step"] == "2":
-                points = [int(i) for i in attr["ten"].split(",")]
-                matrix.setPlayerScore(points) 
+#             elif (item[0] == "REACH") and attr["step"] == "2":
+#                 points = [int(i) for i in attr["ten"].split(",")]
+#                 matrix.setPlayerScore(points) 
 
 
-        else:
-            attr = item[0]             # attr in the form of, say, T46
-            move_idx = attr[0]        # T
-            tile = int(attr[1:]) // 4  # 46 // 4
+#         else:
+#             attr = item[0]             # attr in the form of, say, T46
+#             move_idx = attr[0]        # T
+#             tile = int(attr[1:]) // 4  # 46 // 4
             
-            #### DRAWS ####
-            if move_idx in drawDic:
-                curPlayer = drawDic[move_idx]
-                matrix.handleDraw(curPlayer, tile)
-                handleRiichi(curPlayer)
+#             #### DRAWS ####
+#             if move_idx in drawDic:
+#                 curPlayer = drawDic[move_idx]
+#                 matrix.handleDraw(curPlayer, tile)
+#                 handleRiichi(curPlayer)
 
-            #### DISCARDS ####  
-            else:
-                curPlayer = discardDic[move_idx]
-                matrix.handleDiscard(curPlayer, tile)
-                if arr[index+1][0] != "N":
-                    matrix.addPlayerPool(curPlayer, tile)
+#             #### DISCARDS ####  
+#             else:
+#                 curPlayer = discardDic[move_idx]
+#                 matrix.handleDiscard(curPlayer, tile)
+#                 if arr[index+1][0] != "N":
+#                     matrix.addPlayerPool(curPlayer, tile)
 
-    return riichi_arr
+#     return riichi_arr
