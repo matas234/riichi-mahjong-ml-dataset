@@ -8,12 +8,12 @@ def formatHandFromXML(hand_string):
     if hand_string == '':
         return [0]*34
 
-    out=np.zeros(34, dtype=int)
+    hand_list = [0]*34
     string_list = hand_string.split(",")
-    array = np.array([int(ch) for ch in string_list])
+    array = [int(ch) for ch in string_list]
     for i in array:
-        out[i // 4] +=1
-    return out
+        hand_list[i // 4] +=1
+    return hand_list
 
 
 

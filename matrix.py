@@ -5,10 +5,10 @@ from shanten_calculator import calculateShanten
 
 class Matrix:     
     def __init__(self):
-        self.gameState = np.zeros((11, 34), dtype=int)
-        self.privateHands = [[0]*34 , [0]*34 , [0]*34 , [0]*34]
-        self.playerMelds = [[0]*34 , [0]*34 , [0]*34 , [0]*34]
-        self.playerPool = [[0]*34 , [0]*34 , [0]*34 , [0]*34]
+        self.gameState = np.zeros((11, 34), dtype=np.int16)
+        self.privateHands = [[0]*34 for _ in range(4)]
+        self.playerMelds = [[0]*34 for _ in range(4)]
+        self.playerPool = [[0]*34 for _ in range(4)]
         self.doras = [0]*34
         self.Riichi = [False, False, False, False]
 
@@ -142,8 +142,8 @@ class Matrix:
 
     # initialises starting hands for each player
     def initialisePrivateHands(self, hands):
-        for player in range(4):
-            self.privateHands[player] = hands[player]
+        for i in range(4):
+            self.privateHands[i] = hands[i]
 
     #input player (0-3) tile (0-34)
     def addTilePrivateHand(self, player, tile):
@@ -232,7 +232,12 @@ class Matrix:
         fromPlayer = self.lastDiscardPlayer
 
         #checks whether it's a honour tile, that the call is from the player before in ordering, and that Riichi has not been called
-        if tile//9 == 3 or not((fromPlayer + 1) % 4 == player) or self.getRiichi(player) : return False
+        if (tile//9 == 3 or 
+            not((fromPlayer + 1) % 4 == player) 
+            or self.getRiichi(player)
+        ):
+            return False
+        
         else:
             #number of the tile
             t = tile % 9
@@ -240,15 +245,20 @@ class Matrix:
             h = self.privateHands[player]
             
             #if tileNum is 1
-            if t == 0: return (h[tile+1]>0 and h[tile+2]>0)
+            if t == 0: 
+                return (h[tile+1]>0 and h[tile+2]>0)
             #if tileNum is 9
-            elif t == 8: return (h[tile-1]>0 and h[tile-2]>0)
+            elif t == 8: 
+                return (h[tile-1]>0 and h[tile-2]>0)
             #if tileNum is 2
-            elif t == 1: return (h[tile+1]>0 and h[tile+2]>0) or (h[tile-1]>0 and h[tile+1]>0)
+            elif t == 1: 
+                return (h[tile+1]>0 and h[tile+2]>0) or (h[tile-1]>0 and h[tile+1]>0)
             #if tileNum is 8
-            elif t == 7: return (h[tile-1]>0 and h[tile-2]>0) or (h[tile-1]>0 and h[tile+1]>0)
+            elif t == 7: 
+                return (h[tile-1]>0 and h[tile-2]>0) or (h[tile-1]>0 and h[tile+1]>0)
             # else:  3 <= tileNum <= 7 so can make any chi with it
-            else: return (h[tile-1]>0 and h[tile-2]>0) or (h[tile-1]>0 and h[tile+1]>0) or (h[tile+1]>0 and h[tile+2]>0)
+            else: 
+                return (h[tile-1]>0 and h[tile-2]>0) or (h[tile-1]>0 and h[tile+1]>0) or (h[tile+1]>0 and h[tile+2]>0)
 
 
     def canClosedKan(self, player):
@@ -284,7 +294,7 @@ class Matrix:
     def canRiichi(self, player):
         return (not self.Riichi[player] and
                 self.Closed[player] and
-                calculateShanten(hand=self.privateHands[player]) <= 2*self.closedKans[player] and
+                calculateShanten(hand=self.privateHands[player], numCalledMelds=self.closedKans[player]) <= 0 and
                 self.wallTiles >= 4)
 
 
@@ -315,7 +325,7 @@ class Matrix:
         self.setPlayerWinds()
 
         #sets starting hands
-        initialHands = [formatHandFromXML(data["hai"+str(i)]) for i in range(4) ]
+        initialHands = [formatHandFromXML(data["hai"+str(i)]) for i in range(4)]
         self.initialisePrivateHands(initialHands)
 
         #sets more metadata form seed
