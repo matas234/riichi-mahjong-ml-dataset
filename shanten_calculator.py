@@ -104,10 +104,6 @@ def splits(suit_arr: List[int], groupNum: int = 0, pair_presence: bool = False):
     seqs = completeSequences(suit_arr)
     triplets = getTriplets(suit_arr)
 
-    cur_grp_num = 0
-    cur_taatsu_num = 0
-    cur_pair_presence = False
-
     for meld in seqs + triplets:
         cur_grp_num, cur_taatsu_num, cur_pair_presence = splits([h - m for h, m in zip(suit_arr, meld)], groupNum+1, pair_presence)
         

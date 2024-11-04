@@ -36,7 +36,12 @@ class Matrix:
 
     # builds matrix for POV player
     # forMeld   Riichi: False , Meld: true   (only difference is last discard)   
-    def buildMatrix(self, player, forMeld=False, forClosedMeld=False, callTile=None):
+    def buildMatrix(self, 
+                    player, 
+                    for_meld=False, 
+                    for_closed_meld=False, 
+                    call_tile=None
+        ):
         # player ordering relative to input player. e.g. player =2  => player_ordering = [2,3,0,1]   (counterclockwise on table)
         player_ordering = [i%4 for i in range(player,player+4)]
 
@@ -81,9 +86,9 @@ class Matrix:
 
 
         # sets call tile for the meld matrices
-        if forMeld:
-            if forClosedMeld:
-                self.game_state[0][30] = callTile
+        if for_meld:
+            if for_closed_meld:
+                self.game_state[0][30] = call_tile
             else:
                 self.game_state[0][30] = self.last_discard_tile
             
@@ -91,10 +96,6 @@ class Matrix:
     def setRiichi(self, player):
         self.is_in_riichi[player] = True
 
-
-    def getMatrix(self):  
-        return self.game_state
-        
 
     def addPlayerPool(self, player, tile):
         self.player_pools[player][tile] += 1
@@ -107,8 +108,10 @@ class Matrix:
     def addMeldNum(self, player, meldType):
         if meldType == 0:
             self.chis_num[player] += 1
+
         elif meldType == 1:
             self.pons_num[player] += 1
+
         elif meldType == 2:
             self.kans_num[player] += 1  
 
@@ -159,32 +162,41 @@ class Matrix:
 
         #checks whether it's a honour tile, that the call is from the player before in ordering, and that Riichi has not been called
         if (tile//9 == 3 or 
-            not((fromPlayer + 1) % 4 == player) 
-            or self.is_in_riichi[player]
+            not ((fromPlayer + 1) % 4 == player) or
+            self.is_in_riichi[player]
         ):
             return False
         
-        else:
-            #number of the tile
-            t = tile % 9
-            #hand of player
-            h = self.privateHands[player]
-            
-            #if tileNum is 1
-            if t == 0: 
-                return (h[tile+1]>0 and h[tile+2]>0)
-            #if tileNum is 9
-            elif t == 8: 
-                return (h[tile-1]>0 and h[tile-2]>0)
-            #if tileNum is 2
-            elif t == 1: 
-                return (h[tile+1]>0 and h[tile+2]>0) or (h[tile-1]>0 and h[tile+1]>0)
-            #if tileNum is 8
-            elif t == 7: 
-                return (h[tile-1]>0 and h[tile-2]>0) or (h[tile-1]>0 and h[tile+1]>0)
-            # else:  3 <= tileNum <= 7 so can make any chi with it
-            else: 
-                return (h[tile-1]>0 and h[tile-2]>0) or (h[tile-1]>0 and h[tile+1]>0) or (h[tile+1]>0 and h[tile+2]>0)
+        #number of the tile
+        tile_num = tile % 9
+
+        #hand of player
+        hand = self.privateHands[player]
+        
+        #if tileNum is 1
+        if tile_num == 0: 
+            return (hand[tile+1]>0 and hand[tile+2]>0)
+        
+        #if tileNum is 9
+        elif tile_num == 8: 
+            return (hand[tile-1]>0 and 
+                    hand[tile-2]>0)
+        
+        #if tileNum is 2
+        elif tile_num == 1: 
+            return ((hand[tile+1]>0 and hand[tile+2]>0) or
+                     hand[tile-1]>0 and hand[tile+1]>0)
+        
+        #if tileNum is 8
+        elif tile_num == 7: 
+            return ((hand[tile-1]>0 and hand[tile-2]>0) or
+                     hand[tile-1]>0 and hand[tile+1]>0)
+        
+        # else:  3 <= tileNum <= 7 so can make any chi with it
+        else: 
+            return ((hand[tile-1]>0 and hand[tile-2]>0) or
+                    (hand[tile-1]>0 and hand[tile+1]>0) or
+                    (hand[tile+1]>0 and hand[tile+2]>0))
 
 
     def canClosedKan(self, player):
@@ -221,7 +233,9 @@ class Matrix:
     def canRiichi(self, player):
         return (not self.is_in_riichi[player] and
                 self.is_closed[player] and
-                calculateShanten(hand=self.privateHands[player], called_melds_num=self.closed_kans[player]) <= 0 and
+                calculateShanten(called_melds_num = self.closed_kans[player],
+                                 hand = self.privateHands[player]
+                                 ) <= 0 and
                 self.wall_tiles >= 4)
 
 
@@ -266,10 +280,15 @@ class Matrix:
         # (ordering of if and elif is important here)
         # handles chakan
         if meld_type == 3: 
+            # removes the pon from player
             self.player_pon_tiles[player].remove(meld_tiles[0])
+            # decrements pon count
             self.pons_num[player] -= 1
+            # adds the chakan to player calls
             self.player_melds[player][meld_tiles[0]] = 4
+            # increments kan count
             self.kans_num[player] += 1
+            # removes the tile from player private hand
             self.privateHands[player][meld_tiles[0]] = 0
        
         # handles closed kan       

@@ -17,14 +17,6 @@ def formatHandFromXML(hand_string):
 
 
 
-#prints a matrix in readable format
-def matprint(mat, fmt="g", file = None):
-    col_maxes = [max([len(("{:"+fmt+"}").format(x)) for x in col]) for col in mat.T]
-    for x in mat:
-        for i, y in enumerate(x):
-            print(("{:"+str(col_maxes[i])+fmt+"}").format(y), end="  " , file=file)
-        print("" , file=file )
-
 
 windDict = {
         0 : "E",
@@ -61,19 +53,6 @@ def toWebFormat(handArray):
         string += dict[k]
 
     return string
-
-
-# prints gameState matrix into a readable format for debugging
-def printNice(game, file = None):
-    int_game = [[int(element) for element in row] for row in game]
-    game=int_game
-    print("round wind: ", game[0][0], "| dealer: ", game[0][1], "| tilesInWall: ", game[0][5], "| doras: ", toWebFormat(game[1]), "| roundNum: ", game[0][33], "| honba sticks: ", game[0][3], "| riichi sticks: ", game[0][4],"| scores", game[0][6:10] , file=file )
-    print("POV wind: "+ windDict[ game[0][2] ]+ " | POVHand: ", toWebFormat(game[2]) , file=file )  
-
-    for i in range(4):
-        print("player"+str(i)+ "| #chi=", game[0][14+i], "| #pon=", game[0][18+i], "| #kan=", game[0][22+i], "| #isOpen=", game[0][26+i],"| #isRiichi=", game[0][10+i],"| melds: "+toWebFormat(game[3+i]) , file=file )
-    for i in range(4):
-        print("player"+str(i)+" pool: ",toWebFormat(game[7+i]) , file=file)
 
 
 # decodes meld (from integer)

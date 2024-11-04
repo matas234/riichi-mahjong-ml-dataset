@@ -5,7 +5,6 @@ from typing import List
 from lxml import etree
 import xml.etree.ElementTree as ET
 from tqdm import tqdm
-import time
 
 from global_helper_functions import *
 from matrifixy_replays import gameLogToMatrix
@@ -52,72 +51,22 @@ def convertLog(log):
     return game_id, game_replay
 
 
-out = [convertLog(logs) for logs in game_logs]
 
-def manualTest(gameNum):
-    tupl = out[gameNum]
-    game = tupl[1]
-
-    game_riichi, game_chi, game_pon, game_kan = gameLogToMatrix(game)
-
-    print("gameid: ", tupl[0])
-    for i in game_kan:
-        mat=i[0]
-        printNice(mat)
-        print("label: ", i[1])
-        print("last discard:", mat[0][30])
-        matprint(i[0])
-        print("")
+STATE_TYPE_DIRS = {
+    0: "Riichi",
+    1: "Chi",
+    2: "Pon",
+    3: "Kan"
+}
 
 
-def printStates(states, file = None):
-    for i in states:
-        mat=i[0]
-        printNice(mat, file=file)
-        print("label: ", i[1] , file=file )
-        print("call tile:", tile_dic[int(mat[0][30])] , file=file)
-        #matprint(i[0], file=file)
-        print("", file=file)
-
-
-def printTestToFile(gameNum):
-    with open("out.txt" , "w+") as file:
-        tupl = out[gameNum]
-        game = tupl[1]
-
-        game_riichi, game_chi, game_pon, game_kan = gameLogToMatrix(game)
-
-        print("gameid: ", tupl[0], file=file,)
-
-        print("" , file=file )
-        print("" , file=file)
-        print("Riichi States" , file=file )
-        printStates(game_riichi, file=file)
-
-        print("" , file=file)
-        print("" , file=file) 
-        print("Chi States" , file=file)
-        printStates(game_chi, file=file)
-
-        print("" , file=file)
-        print("" , file=file)
-        print("Pon States" , file=file )
-        printStates(game_pon, file=file)
-
-        print("" , file=file)
-        print("" , file=file)
-        print("Kan States" , file=file)
-        printStates(game_kan, file=file)
-
-
-
-#statetype (0-4) 0 - riichi, 1 - chi, 2 - pon, 3- kan
 # flattens the state matrices, appends the label, and saves to file
 def saveFileForStateType(game_states: np.ndarray,
                 game_id: str,
                 statetype: int, 
-                year: int):
-    
+                year: int,
+                path_to_save_in: str):
+
     if len(game_states) == 0:
         return
     
@@ -128,39 +77,36 @@ def saveFileForStateType(game_states: np.ndarray,
         matrix_flat_with_label = np.append(matrix.flatten(), label)
         arr_to_be_saved[idx] = matrix_flat_with_label
     
-    #make sure that states are non empty, before saving to file
-    if statetype == 0:
-        directory = os.path.join(".", "Data", str(year), "Riichi")
-    elif statetype == 1:
-        directory = os.path.join(".", "Data", str(year), "Chi")
-    elif statetype == 2:
-        directory = os.path.join(".", "Data", str(year), "Pon")
-    else:
-        directory = os.path.join(".", "Data", str(year), "Kan")
+
+    directory = os.path.join(path_to_save_in, 
+                             "mahjong_dataset", 
+                             str(year), 
+                             STATE_TYPE_DIRS[statetype])
+
 
 
     os.makedirs(directory, exist_ok=True)
     
     file_path = os.path.join(directory, f"{game_id}.npz")
-    
-    # np.savez_compressed(file_path, arr_to_be_saved)
-            
+
+    np.savez_compressed(file_path, arr_to_be_saved)
 
 
 
-def saveToFile(log, year):
+def saveToFile(log, year, path_to_save_in):
     game_id, game = convertLog(log)
 
     game_riichi, game_chi, game_pon, game_kan = gameLogToMatrix(game)
 
-    saveFileForStateType(game_riichi, game_id, 0, year)
-    saveFileForStateType(game_chi, game_id, 1 , year)
-    saveFileForStateType(game_pon, game_id, 2 , year) 
-    saveFileForStateType(game_kan, game_id, 3 , year)
+    saveFileForStateType(game_riichi, game_id, 0, year, path_to_save_in)
+    saveFileForStateType(game_chi, game_id, 1 , year, path_to_save_in)
+    saveFileForStateType(game_pon, game_id, 2 , year, path_to_save_in) 
+    saveFileForStateType(game_kan, game_id, 3 , year, path_to_save_in)
 
 
-def saveFilesPerYear(year, numFiles = None):
-    dbfile = 'es4p.db'
+
+def saveFilesPerYear(year, path_to_save_in: str, path_to_db_file: str, numFiles = None):
+    dbfile = path_to_db_file
 
     con = sqlite3.connect(dbfile)
     cur = con.cursor()
@@ -179,7 +125,7 @@ def saveFilesPerYear(year, numFiles = None):
         log = res.fetchone()
 
         try:
-            saveToFile(log, year)
+            saveToFile(log, year, path_to_save_in)
         except Exception as e:
             pass
             # print(f"An error occurred with i={i}: {e}")
@@ -188,8 +134,9 @@ def saveFilesPerYear(year, numFiles = None):
     con.close()
 
 
-def saveAll(years: List[int]):
+
+def saveAll(years: List[int], path_to_save_in: str, path_to_db_file: str):
     for year in years:
         #Change this Parameter to change number of games saved per year
         #IMPORTANT - if you don't include this parameter it will save EVERYTHING
-        saveFilesPerYear(year)
+        saveFilesPerYear(year, path_to_save_in, path_to_db_file)

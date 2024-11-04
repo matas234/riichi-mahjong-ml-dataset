@@ -64,35 +64,35 @@ def gameLogToMatrix(game_log):
 
             ### CHI ###
             if matrix.canChi(player) and (not is_pon_in_priority(player)):
-                matrix.buildMatrix(player=player, forMeld=True)
+                matrix.buildMatrix(player=player, for_meld=True)
                 
                 if is_next_call_chi and cur_player_is_call_player: 
                     chi_label = 1
                     # removes the tile from the wall since it got called
                     matrix.decPlayerPool(discard_player, tile)
 
-                chiArr.append([np.copy(matrix.getMatrix()), chi_label])
+                chiArr.append([np.copy(matrix.game_state), chi_label])
 
             ### PON ### 
             if matrix.canPon(player):
-                matrix.buildMatrix(player=player, forMeld=True)
+                matrix.buildMatrix(player=player, for_meld=True)
                 
                 if is_next_call_pon and cur_player_is_call_player: 
                     pon_label = 1
                     matrix.decPlayerPool(discard_player, tile)
 
-                # ponArr.append([copy.deepcopy(matrix.getMatrix()), ponLabel])
-                ponArr.append([np.copy(matrix.getMatrix()), pon_label])
+                # ponArr.append([copy.deepcopy(matrix.game_state), ponLabel])
+                ponArr.append([np.copy(matrix.game_state), pon_label])
 
             ### KAN ###
             if matrix.canKan(player):
-                matrix.buildMatrix(player, forMeld=True)
+                matrix.buildMatrix(player, for_meld=True)
                 
                 if is_next_call_kan and cur_player_is_call_player: 
                     kan_label = 1
                     matrix.decPlayerPool(discard_player, tile)
 
-                kan_arr.append([np.copy(matrix.getMatrix()), kan_label])
+                kan_arr.append([np.copy(matrix.game_state), kan_label])
 
 
     def handleMeldsSelf():
@@ -107,24 +107,24 @@ def gameLogToMatrix(game_log):
         can_closed_kan, call_tile = matrix.canClosedKan(draw_player)
         
         if can_closed_kan:
-            matrix.buildMatrix(player=draw_player, forMeld=True, forClosedMeld=True, callTile=call_tile)
+            matrix.buildMatrix(player=draw_player, for_meld=True, for_closed_meld=True, call_tile=call_tile)
 
             if is_next_move_call:
                 closed_kan_label = 1
 
-            kan_arr.append([np.copy(matrix.getMatrix()), closed_kan_label])
+            kan_arr.append([np.copy(matrix.game_state), closed_kan_label])
 
 
         ### CHANKAN ###
         can_chakan, call_tile = matrix.canChakan(draw_player)
 
         if can_chakan:
-            matrix.buildMatrix(player=draw_player, forMeld=True, forClosedMeld=True, callTile=call_tile)
+            matrix.buildMatrix(player=draw_player, for_meld=True, for_closed_meld=True, call_tile=call_tile)
 
             if is_next_move_call:
                 chankan_label = 1
 
-            kan_arr.append([np.copy(matrix.getMatrix()), chankan_label])
+            kan_arr.append([np.copy(matrix.game_state), chankan_label])
 
 
     def handleRiichi(player):
@@ -137,7 +137,7 @@ def gameLogToMatrix(game_log):
                 riichiLabel = 1
                 matrix.setRiichi(player)
 
-            riichi_arr.append([np.copy(matrix.getMatrix()), riichiLabel]) 
+            riichi_arr.append([np.copy(matrix.game_state), riichiLabel]) 
 
 
     for index,item in enumerate(game_log): 
@@ -203,7 +203,7 @@ def gameLogToMatrix(game_log):
 #                 riichiLabel = 1
 #                 matrix.setRiichi(player)
 
-#             riichi_arr.append([np.copy(matrix.getMatrix()), riichiLabel]) 
+#             riichi_arr.append([np.copy(matrix.game_state), riichiLabel]) 
 
 
 #     for index,item in enumerate(arr): 
