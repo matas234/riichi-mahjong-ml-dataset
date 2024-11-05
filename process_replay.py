@@ -1,13 +1,14 @@
 import bz2
 import os
 import sqlite3
+import threading
 from typing import List
 from lxml import etree
 import xml.etree.ElementTree as ET
 from tqdm import tqdm
+import numpy as np
 
-from global_helper_functions import *
-from matrifixy_replays import gameLogToMatrix
+from gamelog_to_states import gamelogToStates
 
 
 #redefine numGames so don't cook my computer
@@ -60,7 +61,7 @@ STATE_TYPE_DIRS = {
 }
 
 
-# flattens the state matrices, appends the label, and saves to file
+# appends the label, and saves to file
 def saveFileForStateType(game_states: np.ndarray,
                 game_id: str,
                 statetype: int, 
@@ -69,40 +70,31 @@ def saveFileForStateType(game_states: np.ndarray,
 
     if len(game_states) == 0:
         return
-    
-    
-    arr_to_be_saved = np.empty((len(game_states), 375))
 
-    for idx, (matrix, label) in enumerate(game_states):
-        matrix_flat_with_label = np.append(matrix.flatten(), label)
-        arr_to_be_saved[idx] = matrix_flat_with_label
     
-
     directory = os.path.join(path_to_save_in, 
                              "mahjong_dataset", 
                              str(year), 
                              STATE_TYPE_DIRS[statetype])
 
 
-
     os.makedirs(directory, exist_ok=True)
     
     file_path = os.path.join(directory, f"{game_id}.npz")
 
-    np.savez_compressed(file_path, arr_to_be_saved)
+    np.savez_compressed(file_path, game_states)
 
 
 
 def saveToFile(log, year, path_to_save_in):
     game_id, game = convertLog(log)
 
-    game_riichi, game_chi, game_pon, game_kan = gameLogToMatrix(game)
+    game_riichi, game_chi, game_pon, game_kan = gamelogToStates(game)
 
     saveFileForStateType(game_riichi, game_id, 0, year, path_to_save_in)
     saveFileForStateType(game_chi, game_id, 1 , year, path_to_save_in)
     saveFileForStateType(game_pon, game_id, 2 , year, path_to_save_in) 
     saveFileForStateType(game_kan, game_id, 3 , year, path_to_save_in)
-
 
 
 def saveFilesPerYear(year, path_to_save_in: str, path_to_db_file: str, numFiles = None):
@@ -127,16 +119,14 @@ def saveFilesPerYear(year, path_to_save_in: str, path_to_db_file: str, numFiles 
         try:
             saveToFile(log, year, path_to_save_in)
         except Exception as e:
-            pass
-            # print(f"An error occurred with i={i}: {e}")
+            print(f"An error occurred with i={_}: {e}")
             # traceback.print_exc()
 
     con.close()
-
 
 
 def saveAll(years: List[int], path_to_save_in: str, path_to_db_file: str):
     for year in years:
         #Change this Parameter to change number of games saved per year
         #IMPORTANT - if you don't include this parameter it will save EVERYTHING
-        saveFilesPerYear(year, path_to_save_in, path_to_db_file)
+        saveFilesPerYear(year=year, path_to_save_in=path_to_save_in, path_to_db_file=path_to_db_file)

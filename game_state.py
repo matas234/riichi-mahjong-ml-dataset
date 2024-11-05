@@ -1,38 +1,62 @@
 
 import numpy as np
-from global_helper_functions import formatHandFromXML
+from helper_functions import formatHandFromXML
 from shanten_calculator import calculateShanten
 
-class Matrix:     
-    def __init__(self):
-        self.game_state = np.zeros((11, 34), dtype=int)
-        self.privateHands = [[0]*34 , [0]*34 , [0]*34 , [0]*34]
-        self.player_melds = [[0]*34 , [0]*34 , [0]*34 , [0]*34]
-        self.player_pools = [[0]*34 , [0]*34 , [0]*34 , [0]*34]
-        self.doras = [0]*34
-        self.is_in_riichi = [False, False, False, False]
+class GameState:     
+    game_state = np.zeros(375, dtype=int)
+    private_hands = np.zeros((4, 34), dtype=int)
+    player_melds = np.zeros((4, 34), dtype=int)
+    player_pools = np.zeros((4, 34), dtype=int)
 
+    is_closed = [True, True, True, True]  
+    player_pon_tiles = [[], [], [], []]
+    closed_kans = [0, 0, 0, 0]
+    chis_num = [0, 0, 0, 0]    #
+    pons_num = [0, 0, 0, 0]    # num of melds for each player
+    kans_num = [0, 0, 0, 0]    #
+    player_scores = [0,  0,  0,  0]
+    player_winds = [0, 0, 0, 0]
+    is_in_riichi = [False, False, False, False]
+
+
+    def __init__(self):
         # metadata
         self.round_wind = 0   #0:E, 1:S, ...
-        self.playerScores = [0, 0, 0, 0]
-        self.player_winds = [0,1,2,3]
         self.honba_sticks = 0
         self.round_wind = 0
         self.round_dealer = 0
         self.wall_tiles = 70      # technically 69 but the dataset considers dealer 14th tile as a draw
-        self.chis_num = [0,0,0,0]    #
-        self.pons_num = [0,0,0,0]    # num of melds for each player
-        self.kans_num = [0,0,0,0]    #
 
         #used to keep track of things
         self.last_draw_player = 0
         self.last_draw_tile = 0       
         self.last_discard_player = 0
         self.last_discard_tile = 0
-        self.closed_kans = [0,0,0,0]       
-        self.is_closed = [True, True, True, True]  
-        self.player_pon_tiles = [[], [], [], []]  
 
+        self.reset()
+
+    @classmethod
+    def reset(cls):
+        cls.game_state.fill(0)
+        cls.private_hands.fill(0)
+        cls.player_melds.fill(0)
+        cls.player_pools.fill(0)
+
+        for i in range(4):
+            cls.is_closed[i] = True
+            cls.is_in_riichi[i] = False
+            cls.player_pon_tiles[i].clear()
+            cls.closed_kans[i] = 0
+            cls.chis_num[i] = 0
+            cls.pons_num[i] = 0
+            cls.kans_num[i] = 0
+            cls.player_scores[i] = 0
+            cls.player_winds[i] = 0
+
+
+    def setLabel(self, label):
+        self.game_state[-1] = label
 
     # builds matrix for POV player
     # forMeld   Riichi: False , Meld: true   (only difference is last discard)   
@@ -46,51 +70,51 @@ class Matrix:
         player_ordering = [i%4 for i in range(player,player+4)]
 
         #round wind
-        self.game_state[0][0] = self.round_wind
+        self.game_state[0] = self.round_wind
         #dealer
-        self.game_state[0][1] = player_ordering.index(self.round_dealer)
+        self.game_state[1] = player_ordering.index(self.round_dealer)
         #pov wind
-        self.game_state[0][2] = self.player_winds[player]        
+        self.game_state[2] = self.player_winds[player]        
         #num of honba sticks
-        self.game_state[0][3] = self.honba_sticks
+        self.game_state[3] = self.honba_sticks
         #num of riichi sticks
-        self.game_state[0][4] = self.is_in_riichi.count(True)  
+        self.game_state[4] = self.is_in_riichi.count(True)  
         #num of tiles left in wall (kans might mess this up need to check)
-        self.game_state[0][5] = self.wall_tiles
+        self.game_state[5] = self.wall_tiles
         #padding
-        self.game_state[0][30:33] = -128
+        self.game_state[30:33] = -128
         #round number
-        self.game_state[0][33] = self.round_dealer + 1    
-        
-        #pov hand
-        self.game_state[2] = self.privateHands[player]
+        self.game_state[33] = self.round_dealer + 1    
 
-        for index,player in enumerate(player_ordering):
+        #pov hand
+        self.game_state[68:102] = self.private_hands[player]
+
+        for idx, player in enumerate(player_ordering):
             #melds
-            self.game_state[3+index] = self.player_melds[player]
+            self.game_state[34*(idx + 3): 34*(idx + 4)] = self.player_melds[player]
             #pools
-            self.game_state[7+index] = self.player_pools[player]
+            self.game_state[34*(idx + 7): 34*(idx + 8)] = self.player_pools[player]
 
             #scores
-            self.game_state[0][6+index] = self.playerScores[player]
+            self.game_state[6+idx] = self.player_scores[player]
             #riichis
-            self.game_state[0][10+index] = 1 if self.is_in_riichi[player] else 0
+            self.game_state[10+idx] = 1 if self.is_in_riichi[player] else 0
             #number of chis
-            self.game_state[0][14+index] = self.chis_num[player]
+            self.game_state[14+idx] = self.chis_num[player]
             #number of pons
-            self.game_state[0][18+index] = self.pons_num[player]
+            self.game_state[18+idx] = self.pons_num[player]
             #number of kans
-            self.game_state[0][22+index] = self.kans_num[player]
+            self.game_state[22+idx] = self.kans_num[player]
             # 0: closed, 1: open
-            self.game_state[0][26+index] = 0 if self.is_closed[player] else 1
+            self.game_state[26+idx] = 0 if self.is_closed[player] else 1
 
 
         # sets call tile for the meld matrices
         if for_meld:
             if for_closed_meld:
-                self.game_state[0][30] = call_tile
+                self.game_state[30] = call_tile
             else:
-                self.game_state[0][30] = self.last_discard_tile
+                self.game_state[30] = self.last_discard_tile
             
     
     def setRiichi(self, player):
@@ -121,13 +145,9 @@ class Matrix:
         dealer = self.round_dealer
         self.player_winds = [(i-dealer)%4 for i in range(4)]
 
-
-    def getLastDrawPlayer(self):
-        return self.last_draw_player
-
     
     def setPlayerScore(self, scores):
-        self.playerScores = scores
+        self.player_scores = scores
     
 
     def getLastDiscardPlayer(self):
@@ -140,18 +160,18 @@ class Matrix:
 
     #input tile (0-34)
     def addDoraIndicator(self, doraIndicator):
-        self.game_state[1][doraIndicator] += 1
+        self.game_state[34 + doraIndicator] += 1
             
 
     def canPon(self, player):
         tile = self.last_discard_tile
-        return (self.privateHands[player][tile] >= 2 and 
+        return (self.private_hands[player][tile] >= 2 and 
                 not self.is_in_riichi[player])
 
 
     def canKan(self, player):
         tile = self.last_discard_tile
-        return (self.privateHands[player][tile] == 3 and 
+        return (self.private_hands[player][tile] == 3 and 
                 not self.is_in_riichi[player]) 
 
 
@@ -171,7 +191,7 @@ class Matrix:
         tile_num = tile % 9
 
         #hand of player
-        hand = self.privateHands[player]
+        hand = self.private_hands[player]
         
         #if tileNum is 1
         if tile_num == 0: 
@@ -200,7 +220,7 @@ class Matrix:
 
 
     def canClosedKan(self, player):
-        hand = self.privateHands[player]
+        hand = self.private_hands[player]
         canClosedKan = False
         callTile = None
 
@@ -214,7 +234,7 @@ class Matrix:
 
 
     def canChakan(self, player):
-        hand = self.privateHands[player]
+        hand = self.private_hands[player]
         canChackan = False
         callTile = None
 
@@ -234,7 +254,7 @@ class Matrix:
         return (not self.is_in_riichi[player] and
                 self.is_closed[player] and
                 calculateShanten(called_melds_num = self.closed_kans[player],
-                                 hand = self.privateHands[player]
+                                 hand = self.private_hands[player]
                                  ) <= 0 and
                 self.wall_tiles >= 4)
 
@@ -243,12 +263,12 @@ class Matrix:
         self.last_draw_player = player   
         self.last_draw_tile = tile
         self.wall_tiles -=1                     # remove a wall tile after drawing
-        self.privateHands[player][tile] += 1    # add the drawn tile to hand
+        self.private_hands[player][tile] += 1    # add the drawn tile to hand
 
 
     def handleDiscard(self, player, tile):
         self.last_discard_player = player
-        self.privateHands[player][tile] -= 1  # remove discarded tile from hand
+        self.private_hands[player][tile] -= 1  # remove discarded tile from hand
         self.last_discard_tile = tile
 
 
@@ -262,7 +282,7 @@ class Matrix:
         self.setPlayerWinds()
 
         #sets starting hands
-        self.privateHands = [formatHandFromXML(data["hai"+str(i)]) for i in range(4)]
+        self.private_hands = [formatHandFromXML(data["hai"+str(i)]) for i in range(4)]
 
         #sets more metadata form seed
         seed = [int(i) for i in data["seed"].split(',')]
@@ -282,6 +302,7 @@ class Matrix:
         if meld_type == 3: 
             # removes the pon from player
             self.player_pon_tiles[player].remove(meld_tiles[0])
+            
             # decrements pon count
             self.pons_num[player] -= 1
             # adds the chakan to player calls
@@ -289,11 +310,11 @@ class Matrix:
             # increments kan count
             self.kans_num[player] += 1
             # removes the tile from player private hand
-            self.privateHands[player][meld_tiles[0]] = 0
+            self.private_hands[player][meld_tiles[0]] = 0
        
         # handles closed kan       
         elif is_closed_call:
-            self.privateHands[player][ meld_tiles[0] ] = 0
+            self.private_hands[player][ meld_tiles[0] ] = 0
             self.kans_num[player] += 1
             self.player_melds[player][ meld_tiles[0] ] = 4
 
@@ -306,10 +327,16 @@ class Matrix:
                 self.player_melds[player][tile] += 1 
 
             called = self.last_discard_tile
-            meld_tiles.remove(called)  
+            try:
+                meld_tiles.remove(called)
+            except Exception as e:
+                print(f"meld tiles: {meld_tiles}, called: {called}")
+                print(self.wall_tiles, self.round_wind, self.honba_sticks, self.round_dealer)  
+                print(e)
+                print(is_closed_call)
             #removes tiles from player hand
             for tile in meld_tiles:
-                self.privateHands[player][tile] -= 1
+                self.private_hands[player][tile] -= 1
             # adds pon if pon
             if meld_type == 1:
                 self.player_pon_tiles[player].append(meld_tiles[0])

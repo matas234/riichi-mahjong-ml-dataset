@@ -1,8 +1,3 @@
-import numpy as np
-
-
-
-
 # converts hand from xml format
 def formatHandFromXML(hand_string):
     if hand_string == '':
@@ -15,44 +10,6 @@ def formatHandFromXML(hand_string):
         hand_list[i // 4] +=1
     return hand_list
 
-
-
-
-windDict = {
-        0 : "E",
-        1 : "S",
-        2: "W",
-        3 : "N"
-    }
-
-
-tile_dic = {i: f"{i+1}m" if i <= 8 else f"{i-8}p" if i <= 17 else f"{i-17}s" for i in range(27)}
-honour_entries = {27 : "e", 28 : "s", 29 : "w", 30 : "n", 31 : "wd", 32 : "gd", 33 : "rd", -128:"None"}
-tile_dic.update(honour_entries)
-
-
-
-# formats hand into web format (can be plugged into: https://tenhou.net/2/?q=4566788m456p2246s)
-def toWebFormat(handArray):
-    dict = {0: 'm',
-        1: 'p',
-        2: 's',
-        3: 'z'
-    }
-    split_indices=[9,18,27]
-    handArray =  np.split(handArray, split_indices) 
-    string = ''
-
-    for k, suit in enumerate(handArray):
-        if sum(suit) == 0:
-            continue
-        for num in range(len(suit)):
-            if suit[num] == 0:  continue
-            else:  string += str(num+1)*suit[num]
-        
-        string += dict[k]
-
-    return string
 
 
 # decodes meld (from integer)
