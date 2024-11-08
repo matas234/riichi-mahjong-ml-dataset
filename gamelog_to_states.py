@@ -31,13 +31,13 @@ def gamelogToStates(game_log):
 
         discard_player = game_state.getLastDiscardPlayer()
         tile = game_state.getLastDiscardTile()
-        
+
         players = [0,1,2,3]
         players.remove(discard_player)  # discard player cant call the tile
         call_player = None
         # true if next call is Pon or Kan; they get priority over chi.
         is_pon_in_priority = lambda player: False
-       
+
         next_move  = game_log[index+1]
         is_next_move_call = (next_move[0] == "N")
 
@@ -53,8 +53,8 @@ def gamelogToStates(game_log):
             is_next_call_kan = (meldType==2)
 
             is_pon_in_priority = lambda player:  (is_next_call_pon or is_next_call_kan) and (player != call_player)
-       
-       
+
+
         for player in players:
             chi_label, pon_label, kan_label = 0, 0, 0
 
@@ -63,19 +63,19 @@ def gamelogToStates(game_log):
             ### CHI ###
             if game_state.canChi(player) and (not is_pon_in_priority(player)):
                 game_state.buildMatrix(player=player, for_meld=True)
-                
-                if is_next_call_chi and cur_player_is_call_player: 
+
+                if is_next_call_chi and cur_player_is_call_player:
                     chi_label = 1
                     game_state.decPlayerPool(discard_player, tile)
 
                 game_state.setLabel(chi_label)
                 chi_arr = np.append(chi_arr, [game_state.game_state], axis=0)
 
-            ### PON ### 
+            ### PON ###
             if game_state.canPon(player):
                 game_state.buildMatrix(player=player, for_meld=True)
-                
-                if is_next_call_pon and cur_player_is_call_player: 
+
+                if is_next_call_pon and cur_player_is_call_player:
                     pon_label = 1
                     game_state.decPlayerPool(discard_player, tile)
 
@@ -85,8 +85,8 @@ def gamelogToStates(game_log):
             ### KAN ###
             if game_state.canKan(player):
                 game_state.buildMatrix(player, for_meld=True)
-                
-                if is_next_call_kan and cur_player_is_call_player: 
+
+                if is_next_call_kan and cur_player_is_call_player:
                     kan_label = 1
                     game_state.decPlayerPool(discard_player, tile)
 
@@ -106,7 +106,7 @@ def gamelogToStates(game_log):
         ### CLOSED KAN ###
         # If the player has 4 of the same tile then builds the matrix and appends it with the label to kanArr
         can_closed_kan, call_tile = game_state.canClosedKan(draw_player)
-        
+
         if can_closed_kan:
             game_state.buildMatrix(player=draw_player, for_meld=True, for_closed_meld=True, call_tile=call_tile)
 
@@ -139,19 +139,19 @@ def gamelogToStates(game_log):
             riichiLabel = 0
             game_state.buildMatrix(player=player)
 
-            if game_log[index+1][0] == "REACH": 
+            if game_log[index+1][0] == "REACH":
                 riichiLabel = 1
 
             game_state.setLabel(riichiLabel)
             riichi_arr = np.append(riichi_arr, [game_state.game_state], axis=0)
 
 
-    for index,item in enumerate(game_log): 
+    for index,item in enumerate(game_log):
         if item[1]:
             attr = item[1]
 
             if item[0] == "INIT":
-                game_state = GameState() 
+                game_state = GameState()
                 game_state.initialiseGame(attr)
 
             elif item[0] == "N":
@@ -162,16 +162,16 @@ def gamelogToStates(game_log):
                 ### one is related to sequence of subsequent calls by 2 players (game_log[index-2][0] != "N" fixes that)
                 ### the other is when a player kans twice in a row (prvCallPlayer == player) fixes that
                 ### and obviously draw player and call player are always the same player in a kan'
-                is_closed_call = (player == game_state.last_draw_player and 
+                is_closed_call = (player == game_state.last_draw_player and
                                   (game_log[index-2][0] != "N" or prv_call_player == player))
 
                 game_state.handleMeld(player, meld_info, is_closed_call)
 
                 prv_call_player = player
-          
+
             elif item[0] == "DORA":
                 game_state.addDoraIndicator( int(attr["hai"]) // 4 )
-            
+
             elif item[0] == "REACH":
                 game_state.setRiichi(game_state.last_draw_player)
                 if attr["step"] == "2":
@@ -188,9 +188,9 @@ def gamelogToStates(game_log):
                 cur_player = DRAW_DIC[moveIndex]
                 game_state.handleDraw(cur_player, tile)
                 handleMeldsSelf()
-                handleRiichi(cur_player)    
+                handleRiichi(cur_player)
 
-            #### DISCARDS ####  
+            #### DISCARDS ####
             else:
                 cur_player = DISCARD_DIC[moveIndex]
                 game_state.handleDiscard(cur_player, tile)

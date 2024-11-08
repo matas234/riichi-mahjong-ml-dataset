@@ -90,23 +90,27 @@ def splitsNoGroups(suit_arr: List[int]):
     return max_taatsu_num, max_pair_presence
 
 
-def splits(suit_arr: List[int], groupNum: int = 0, pair_presence: bool = False): 
+def splits(suit_arr: List[int], groupNum: int = 0, pair_presence: bool = False):
     ## checks if suit_arr is cached
     suit_tuple = tuple(suit_arr)
+
     if suit_tuple in splits_groups_cache:
         (cached_group_num, cached_tatsu_num, cached_pair_presence) = splits_groups_cache[suit_tuple]
-        return (cached_group_num + groupNum, cached_tatsu_num, cached_pair_presence or pair_presence)
-        
+
+        return (cached_group_num + groupNum,
+                cached_tatsu_num,
+                cached_pair_presence or pair_presence)
+
     max_grp_num = groupNum
     max_tatsu_num = 0
     max_pair_presence = pair_presence
-    
+
     seqs = completeSequences(suit_arr)
     triplets = getTriplets(suit_arr)
 
     for meld in seqs + triplets:
         cur_grp_num, cur_taatsu_num, cur_pair_presence = splits([h - m for h, m in zip(suit_arr, meld)], groupNum+1, pair_presence)
-        
+
         if cur_grp_num > max_grp_num:
             max_grp_num = cur_grp_num
             max_tatsu_num = cur_taatsu_num
@@ -117,7 +121,7 @@ def splits(suit_arr: List[int], groupNum: int = 0, pair_presence: bool = False):
                 max_tatsu_num = cur_taatsu_num
                 max_pair_presence = cur_pair_presence
 
-    if (not seqs) and (not triplets):     #if no more groups then counts maximum of taatsu    
+    if (not seqs) and (not triplets):     #if no more groups then counts maximum of taatsu
         max_tatsu_num, max_pair_presence = splitsNoGroups(suit_arr)
 
 
@@ -195,7 +199,6 @@ SPLIT_INDICES = [9,18,27,34]
 def calculateShanten(hand: List[int], called_melds_num: int = 0):
     hand_array = [hand[i:j] for i, j in zip([0] + SPLIT_INDICES[:-1], SPLIT_INDICES)]
 
-    return min(generalShanten(hand_array, called_melds_num), 
-               chiitoitsuShanten(hand_array), 
+    return min(generalShanten(hand_array, called_melds_num),
+               chiitoitsuShanten(hand_array),
                orphanSourceShanten(hand_array))
-

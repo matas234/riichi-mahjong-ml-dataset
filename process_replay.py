@@ -1,7 +1,6 @@
 import bz2
 import os
 import sqlite3
-import threading
 from typing import List
 from lxml import etree
 import xml.etree.ElementTree as ET
@@ -64,22 +63,21 @@ STATE_TYPE_DIRS = {
 # appends the label, and saves to file
 def saveFileForStateType(game_states: np.ndarray,
                 game_id: str,
-                statetype: int, 
+                statetype: int,
                 year: int,
                 path_to_save_in: str):
 
     if len(game_states) == 0:
         return
 
-    
-    directory = os.path.join(path_to_save_in, 
-                             "mahjong_dataset", 
-                             str(year), 
+    directory = os.path.join(path_to_save_in,
+                             "mahjong_dataset",
+                             str(year),
                              STATE_TYPE_DIRS[statetype])
 
 
     os.makedirs(directory, exist_ok=True)
-    
+
     file_path = os.path.join(directory, f"{game_id}.npz")
 
     np.savez_compressed(file_path, game_states)
@@ -93,11 +91,15 @@ def saveToFile(log, year, path_to_save_in):
 
     saveFileForStateType(game_riichi, game_id, 0, year, path_to_save_in)
     saveFileForStateType(game_chi, game_id, 1 , year, path_to_save_in)
-    saveFileForStateType(game_pon, game_id, 2 , year, path_to_save_in) 
+    saveFileForStateType(game_pon, game_id, 2 , year, path_to_save_in)
     saveFileForStateType(game_kan, game_id, 3 , year, path_to_save_in)
 
 
-def saveFilesPerYear(year, path_to_save_in: str, path_to_db_file: str, numFiles = None):
+def saveFilesPerYear(year,
+                     path_to_save_in: str,
+                     path_to_db_file: str,
+                     numFiles = None
+    ):
     dbfile = path_to_db_file
 
     con = sqlite3.connect(dbfile)
@@ -106,27 +108,26 @@ def saveFilesPerYear(year, path_to_save_in: str, path_to_db_file: str, numFiles 
 
     numGames = res.fetchone()[0]
 
-    print(year)
-
     res = cur.execute(f"SELECT log_id, log_content FROM logs WHERE year = {year}")
 
     if numFiles:
         numGames = numFiles
 
-    for _ in tqdm(range(numGames), desc="Processing games"):
+    for game_num in tqdm(range(numGames), desc=f"Processing {year}"):
         log = res.fetchone()
 
         try:
             saveToFile(log, year, path_to_save_in)
         except Exception as e:
-            print(f"An error occurred with i={_}: {e}")
-            # traceback.print_exc()
+            print(f"An error occurred with i={game_num}: {e}")
+
 
     con.close()
 
 
 def saveAll(years: List[int], path_to_save_in: str, path_to_db_file: str):
     for year in years:
-        #Change this Parameter to change number of games saved per year
-        #IMPORTANT - if you don't include this parameter it will save EVERYTHING
-        saveFilesPerYear(year=year, path_to_save_in=path_to_save_in, path_to_db_file=path_to_db_file)
+        saveFilesPerYear(year = year,
+                         path_to_save_in = path_to_save_in,
+                         path_to_db_file = path_to_db_file)
+        print(f"Finished processing {year}")
