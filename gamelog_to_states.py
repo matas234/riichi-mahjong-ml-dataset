@@ -20,14 +20,21 @@ DISCARD_DIC = {
 
 
 def gamelogToStates(game_log):
-    chi_arr = np.empty((0, 375), dtype=int)
-    pon_arr = np.empty((0, 375), dtype=int)
-    kan_arr = np.empty((0, 375), dtype=int)
-    riichi_arr = np.empty((0, 375), dtype=int)
+    chi_states = np.empty((0, 374), dtype=int)
+    chi_labels = np.empty((0, 2) , dtype=int)
+
+    pon_states = np.empty((0, 374), dtype=int)
+    pon_labels = np.empty((0, 2) , dtype=int)
+
+    kan_states = np.empty((0, 374), dtype=int)
+    kan_labels = np.empty((0, 2) , dtype=int)
+
+    riichi_states = np.empty((0, 374), dtype=int)
+    riichi_labels = np.empty((0, 2) , dtype=int)
 
 
     def handleMeldsOtherPlayers():
-        nonlocal chi_arr, pon_arr, kan_arr
+        nonlocal chi_states, pon_states, kan_states
 
         discard_player = game_state.getLastDiscardPlayer()
         tile = game_state.getLastDiscardTile()
@@ -68,8 +75,13 @@ def gamelogToStates(game_log):
                     chi_label = 1
                     game_state.decPlayerPool(discard_player, tile)
 
-                game_state.setLabel(chi_label)
-                chi_arr = np.append(chi_arr, [game_state.game_state], axis=0)
+                chi_states = np.append(chi_states,
+                                       [game_state.game_state],
+                                       axis=0)
+
+                chi_labels = np.append(chi_labels,
+                                       np.eye(2, dtype=int)[chi_label],
+                                       axis=0)
 
             ### PON ###
             if game_state.canPon(player):
@@ -79,8 +91,15 @@ def gamelogToStates(game_log):
                     pon_label = 1
                     game_state.decPlayerPool(discard_player, tile)
 
-                game_state.setLabel(pon_label)
-                pon_arr = np.append(pon_arr, [game_state.game_state], axis=0)
+
+                pon_states = np.append(pon_states,
+                                       [game_state.game_state],
+                                       axis=0)
+
+                pon_labels = np.append(pon_labels,
+                                       np.eye(2, dtype=int)[pon_label],
+                                       axis=0)
+
 
             ### KAN ###
             if game_state.canKan(player):
@@ -90,12 +109,18 @@ def gamelogToStates(game_log):
                     kan_label = 1
                     game_state.decPlayerPool(discard_player, tile)
 
-                game_state.setLabel(kan_label)
-                kan_arr = np.append(kan_arr, [game_state.game_state], axis=0)
+                kan_states = np.append(kan_states,
+                                       [game_state.game_state],
+                                       axis=0)
+
+                kan_labels = np.append(kan_labels,
+                                       np.eye(2, dtype=int)[kan_label],
+                                       axis=0)
+
 
 
     def handleMeldsSelf():
-        nonlocal kan_arr
+        nonlocal kan_states
 
         draw_player = game_state.last_draw_player
 
@@ -113,8 +138,14 @@ def gamelogToStates(game_log):
             if is_next_move_call:
                 closed_kan_label = 1
 
-            game_state.setLabel(closed_kan_label)
-            kan_arr = np.append(kan_arr, [game_state.game_state], axis=0)
+            kan_states = np.append(kan_states,
+                                   [game_state.game_state],
+                                   axis=0)
+
+            kan_labels = np.append(kan_labels,
+                                   np.eye(2, dtype=int)[closed_kan_label],
+                                   axis=0)
+
 
 
         ### CHANKAN ###
@@ -126,14 +157,18 @@ def gamelogToStates(game_log):
             if is_next_move_call:
                 chankan_label = 1
 
-            game_state.setLabel(chankan_label)
-            kan_arr = np.append(kan_arr, [game_state.game_state], axis=0)
+            kan_states = np.append(kan_states,
+                                   [game_state.game_state],
+                                   axis=0)
+
+            kan_labels = np.append(kan_labels,
+                                   np.eye(2, dtype=int)[chankan_label],
+                                   axis=0)
 
 
-    prv_call_player = False
 
     def handleRiichi(player):
-        nonlocal riichi_arr
+        nonlocal riichi_states
 
         if game_state.canRiichi(player):
             riichiLabel = 0
@@ -142,10 +177,17 @@ def gamelogToStates(game_log):
             if game_log[index+1][0] == "REACH":
                 riichiLabel = 1
 
-            game_state.setLabel(riichiLabel)
-            riichi_arr = np.append(riichi_arr, [game_state.game_state], axis=0)
+            riichi_states = np.append(riichi_states,
+                                      [game_state.game_state],
+                                      axis=0)
+
+            riichi_labels = np.append(riichi_labels,
+                                      np.eye(2, dtype=int)[riichiLabel],
+                                      axis=0)
 
 
+
+    prv_call_player = False
     for index,item in enumerate(game_log):
         if item[1]:
             attr = item[1]
@@ -198,4 +240,7 @@ def gamelogToStates(game_log):
                 handleMeldsOtherPlayers()
 
 
-    return riichi_arr, chi_arr, pon_arr, kan_arr
+    return (riichi_states, riichi_labels,
+            chi_states, chi_labels,
+            pon_states, pon_labels,
+            kan_states, kan_labels)

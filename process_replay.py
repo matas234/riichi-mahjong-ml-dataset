@@ -2,6 +2,7 @@ import bz2
 import os
 import sqlite3
 from typing import List
+import h5py
 from lxml import etree
 import xml.etree.ElementTree as ET
 from tqdm import tqdm
@@ -61,13 +62,14 @@ STATE_TYPE_DIRS = {
 
 
 # appends the label, and saves to file
-def saveFileForStateType(game_states: np.ndarray,
-                game_id: str,
-                statetype: int,
-                year: int,
-                path_to_save_in: str):
+def saveFileForStateType(states: np.ndarray,
+                        labels: np.ndarray,
+                        game_id: str,
+                        statetype: int,
+                        year: int,
+                        path_to_save_in: str):
 
-    if len(game_states) == 0:
+    if len(states) == 0:
         return
 
     directory = os.path.join(path_to_save_in,
@@ -80,19 +82,19 @@ def saveFileForStateType(game_states: np.ndarray,
 
     file_path = os.path.join(directory, f"{game_id}.npz")
 
-    np.savez_compressed(file_path, game_states)
+    np.savez_compressed(file_path, states)
 
 
 
 def saveToFile(log, year, path_to_save_in):
     game_id, game = convertLog(log)
 
-    game_riichi, game_chi, game_pon, game_kan = gamelogToStates(game)
+    riichi_states, riichi_labels, chi_states, chi_labels, pon_states, pon_labels, kan_states, kan_labels = gamelogToStates(game)
 
-    saveFileForStateType(game_riichi, game_id, 0, year, path_to_save_in)
-    saveFileForStateType(game_chi, game_id, 1 , year, path_to_save_in)
-    saveFileForStateType(game_pon, game_id, 2 , year, path_to_save_in)
-    saveFileForStateType(game_kan, game_id, 3 , year, path_to_save_in)
+    saveFileForStateType(riichi_states, riichi_labels game_id, 0, year, path_to_save_in)
+    saveFileForStateType(chi_states, chi_labels, game_id, 1 , year, path_to_save_in)
+    saveFileForStateType(pon_states, pon_labels, game_id, 2 , year, path_to_save_in)
+    saveFileForStateType(kan_states, kan_labels, game_id, 3 , year, path_to_save_in)
 
 
 def saveFilesPerYear(year,
@@ -104,7 +106,7 @@ def saveFilesPerYear(year,
 
     con = sqlite3.connect(dbfile)
     cur = con.cursor()
-    res = cur.execute(f"SELECT COUNT(*) FROM logs WHERE year = {year}")
+    cur.execute("SELECT COUNT(*) FROM logs")
 
     numGames = res.fetchone()[0]
 
@@ -125,9 +127,38 @@ def saveFilesPerYear(year,
     con.close()
 
 
+
+TOTAL_ROWS = 72_000_000
+CHUNK_SIZE = 2048
+COMPRESSION = "gzip"
+
+
+
 def saveAll(years: List[int], path_to_save_in: str, path_to_db_file: str):
-    for year in years:
-        saveFilesPerYear(year = year,
-                         path_to_save_in = path_to_save_in,
-                         path_to_db_file = path_to_db_file)
-        print(f"Finished processing {year}")
+    with (open("C:\\Users\\msaba\\Documents\\GitHub\\riichi-dataset\\es4p.db", "r") as db_file,
+         h5py.File(r"C:\Users\msaba\Documents\GitHub\actual-dataset\hanchan_hp5\file.h5", "w") as h5_file):
+
+        con = sqlite3.connect(db_file)
+        cur = con.cursor()
+        cur.execute("SELECT COUNT(*) FROM logs")
+
+        datasets_info = [
+            ('riichi_states', 374),
+            ('riichi_labels', 2),
+            ('chi_states', 374),
+            ('chi_labels', 2),
+            ('pon_states', 374),
+            ('pon_labels', 2),
+            ('kan_states', 374),
+            ('kan_labels', 2)
+        ]
+
+
+
+        for name, size in datasets_info:
+            h5_file.create_dataset(name,
+                                   shape=(0, size),
+                                   maxshape=(None, size),
+                                   compression=COMPRESSION,
+                                   chunks=(CHUNK_SIZE, size)
+                                   )

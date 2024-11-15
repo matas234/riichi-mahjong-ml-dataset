@@ -61,6 +61,12 @@ def incompleteSequences(suit_arr: List[int]):
     return possible_insequences
 
 
+
+def hashSuitArr(suit_arr: List[int]):
+    return sum(1 << (2 * tile)
+               for tile in suit_arr)
+
+
 def splitsNoGroups(suit_arr: List[int]):
     suit_tuple = tuple(suit_arr)
     if suit_tuple in splits_nogroups_cache:

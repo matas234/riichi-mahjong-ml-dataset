@@ -5,7 +5,7 @@ from helper_functions import formatHandFromXML
 from shanten_calculator import calculateShanten
 
 class GameState:
-    game_state = np.zeros(375, dtype=int)
+    game_state = np.zeros(374, dtype=int)
     private_hands = np.zeros((4, 34), dtype=int)
     player_melds = np.zeros((4, 34), dtype=int)
     player_pools = np.zeros((4, 34), dtype=int)
@@ -61,9 +61,6 @@ class GameState:
             cls.player_scores[i] = 0
             cls.player_winds[i] = 0
 
-
-    def setLabel(self, label):
-        self.game_state[-1] = label
 
     # builds matrix for POV player
     # forMeld   Riichi: False , Meld: true   (only difference is last discard)
