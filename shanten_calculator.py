@@ -10,7 +10,7 @@ splits_nogroups_cache: dict[int, Tuple[int, bool]] = {}
 
 
 
-def getPairs(suit_arr: List[int]):
+def getPairs(suit_arr: List[int]) -> List[List[int]]:
     possible_pairs=[]
     for i in range(9):
         if suit_arr[i]>1:
@@ -20,7 +20,7 @@ def getPairs(suit_arr: List[int]):
     return possible_pairs
 
 
-def getTriplets(suit_arr: List[int]):
+def getTriplets(suit_arr: List[int]) -> List[List[int]]:
     possible_triplets=[]
     for i in range(9):
         if suit_arr[i]>2:
@@ -30,7 +30,7 @@ def getTriplets(suit_arr: List[int]):
     return possible_triplets
 
 
-def completeSequences(suit_arr: List[int]):
+def getCompleteSequences(suit_arr: List[int]) -> List[List[int]]:
     possible_sequences=[]
     for i in range(2,9):
         if all(suit_arr[i-j]>0 for j in range(3)):
@@ -42,7 +42,7 @@ def completeSequences(suit_arr: List[int]):
     return possible_sequences
 
 
-def incompleteSequences(suit_arr: List[int]):
+def getIncompleteSequences(suit_arr: List[int]) -> List[List[int]]:
     possible_insequences=[]
     if suit_arr[0]>0 and suit_arr[1]>0:
         out = [0]*9
@@ -64,22 +64,23 @@ def incompleteSequences(suit_arr: List[int]):
 
 
 
-def hashSuitArr(suit_arr: List[int]):
+def hashHand(suit_arr: List[int]) -> int:
     result = 0
     for i, tile in enumerate(suit_arr):
-        result |= tile * (1 << (3 * i))  # Use bitwise OR to accumulate the result
+        result |= tile * (1 << (3 * i))
     return result
 
 
-def splitsNoGroups(suit_arr: List[int]):
-    hash_value = hashSuitArr(suit_arr)
+
+def splitsNoGroups(suit_arr: List[int]) -> Tuple[int, bool]:
+    hash_value = hashHand(suit_arr)
     if hash_value in splits_nogroups_cache:
         return splits_nogroups_cache[hash_value]
 
     max_taatsu_num = 0
     max_pair_presence = False
 
-    inseqs_list = incompleteSequences(suit_arr)
+    inseqs_list = getIncompleteSequences(suit_arr)
     pairs_list = getPairs(suit_arr)
 
     for pair in pairs_list:
@@ -100,9 +101,10 @@ def splitsNoGroups(suit_arr: List[int]):
     return max_taatsu_num, max_pair_presence
 
 
-def splits(suit_arr: List[int], groupNum: int = 0, pair_presence: bool = False):
+
+def splits(suit_arr: List[int], groupNum= 0, pair_presence= False) -> Tuple[int, int, bool]:
     ## checks if suit_arr is cached
-    hash_value = hashSuitArr(suit_arr)
+    hash_value = hashHand(suit_arr)
 
     if hash_value in splits_groups_cache:
         (cached_group_num, cached_tatsu_num, cached_pair_presence) = splits_groups_cache[hash_value]
@@ -115,7 +117,7 @@ def splits(suit_arr: List[int], groupNum: int = 0, pair_presence: bool = False):
     max_tatsu_num = 0
     max_pair_presence = pair_presence
 
-    seqs = completeSequences(suit_arr)
+    seqs = getCompleteSequences(suit_arr)
     triplets = getTriplets(suit_arr)
 
     for meld in seqs + triplets:
@@ -140,9 +142,10 @@ def splits(suit_arr: List[int], groupNum: int = 0, pair_presence: bool = False):
     return max_grp_num, max_tatsu_num, max_pair_presence
 
 
-def splitsTotal(hand: List[List[int]]):
+
+def splitsTotal(hand: List[List[int]]) -> Tuple[int, int, bool]:
     ## num of groups, num of taatsu, has pair
-    total_split = [0,0,False]
+    total_split = [0, 0, False]
 
     for suit_tiles in hand[:3]:
         suit_split = splits(suit_arr = suit_tiles)
@@ -160,7 +163,8 @@ def splitsTotal(hand: List[List[int]]):
     return total_split
 
 
-def generalShanten(hand_array: List[List[int]], numCalledMelds: int = 0):
+
+def generalShanten(hand_array: List[List[int]], numCalledMelds= 0) -> int:
     total_split = splitsTotal(hand_array)
     taatsu_num = total_split[1]
     group_num = total_split[0] + numCalledMelds
@@ -175,7 +179,8 @@ def generalShanten(hand_array: List[List[int]], numCalledMelds: int = 0):
     return 8 - 2*group_num - min(taatsu_num, 4 - group_num) - min(1, max(0, taatsu_num + group_num - 4) ) + p
 
 
-def chiitoitsuShanten(hand_array: List[List[int]]):
+
+def chiitoitsuShanten(hand_array: List[List[int]]) -> int:
     num_pairs = 0
     for suit in hand_array:
         for tile in suit:
@@ -184,7 +189,8 @@ def chiitoitsuShanten(hand_array: List[List[int]]):
     return 6 - num_pairs
 
 
-def orphanSourceShanten(hand_array: List[List[int]]):
+
+def orphanSourceShanten(hand_array: List[List[int]]) -> int:
     diff_terminals = 0
     pairs_terminals = 0
     pair_const = 0
@@ -204,9 +210,10 @@ def orphanSourceShanten(hand_array: List[List[int]]):
     return 13 - diff_terminals - pair_const
 
 
+
 SPLIT_INDICES = [9,18,27,34]
 
-def calculateShanten(hand: List[int], called_melds_num: int = 0):
+def calculateShanten(hand: List[int], called_melds_num= 0) -> int:
     hand_array = [hand[i:j] for i, j in zip([0] + SPLIT_INDICES[:-1], SPLIT_INDICES)]
 
     return min(generalShanten(hand_array, called_melds_num),

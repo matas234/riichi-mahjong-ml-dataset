@@ -20,17 +20,17 @@ DISCARD_DIC = {
 
 
 def gamelogToStates(game_log):
-    chi_states = np.empty((0, 374), dtype=int)
-    chi_labels = np.empty((0, 2) , dtype=int)
+    chi_states = np.empty((0, 374), dtype=np.int8)
+    chi_labels = np.empty((0, 2), dtype=np.int8)
 
-    pon_states = np.empty((0, 374), dtype=int)
-    pon_labels = np.empty((0, 2) , dtype=int)
+    pon_states = np.empty((0, 374), dtype=np.int8)
+    pon_labels = np.empty((0, 2), dtype=np.int8)
 
-    kan_states = np.empty((0, 374), dtype=int)
-    kan_labels = np.empty((0, 2) , dtype=int)
+    kan_states = np.empty((0, 374), dtype=np.int8)
+    kan_labels = np.empty((0, 2), dtype=np.int8)
 
-    riichi_states = np.empty((0, 374), dtype=int)
-    riichi_labels = np.empty((0, 2) , dtype=int)
+    riichi_states = np.empty((0, 374), dtype=np.int8)
+    riichi_labels = np.empty((0, 2), dtype=np.int8)
 
 
     def handleMeldsOtherPlayers():
@@ -80,7 +80,7 @@ def gamelogToStates(game_log):
                                        axis=0)
 
                 chi_labels = np.append(chi_labels,
-                                       [np.eye(2, dtype=int)[chi_label]],
+                                       [np.eye(2, dtype=np.int8)[chi_label]],
                                        axis=0)
 
             ### PON ###
@@ -97,7 +97,7 @@ def gamelogToStates(game_log):
                                        axis=0)
 
                 pon_labels = np.append(pon_labels,
-                                       [np.eye(2, dtype=int)[pon_label]],
+                                       [np.eye(2, dtype=np.int8)[pon_label]],
                                        axis=0)
 
 
@@ -114,7 +114,7 @@ def gamelogToStates(game_log):
                                        axis=0)
 
                 kan_labels = np.append(kan_labels,
-                                       [np.eye(2, dtype=int)[kan_label]],
+                                       [np.eye(2, dtype=np.int8)[kan_label]],
                                        axis=0)
 
 
@@ -143,7 +143,7 @@ def gamelogToStates(game_log):
                                    axis=0)
 
             kan_labels = np.append(kan_labels,
-                                   [np.eye(2, dtype=int)[closed_kan_label]],
+                                   [np.eye(2, dtype=np.int8)[closed_kan_label]],
                                    axis=0)
 
 
@@ -162,7 +162,7 @@ def gamelogToStates(game_log):
                                    axis=0)
 
             kan_labels = np.append(kan_labels,
-                                   [np.eye(2, dtype=int)[chankan_label]],
+                                   [np.eye(2, dtype=np.int8)[chankan_label]],
                                    axis=0)
 
 
@@ -182,7 +182,7 @@ def gamelogToStates(game_log):
                                       axis=0)
 
             riichi_labels = np.append(riichi_labels,
-                                      [np.eye(2, dtype=int)[riichiLabel]],
+                                      [np.eye(2, dtype=np.int8)[riichiLabel]],
                                       axis=0)
 
 

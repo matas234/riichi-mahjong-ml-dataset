@@ -5,10 +5,10 @@ from helper_functions import formatHandFromXML
 from shanten_calculator import calculateShanten
 
 class GameState:
-    game_state = np.zeros(374, dtype=int)
-    private_hands = np.zeros((4, 34), dtype=int)
-    player_melds = np.zeros((4, 34), dtype=int)
-    player_pools = np.zeros((4, 34), dtype=int)
+    game_state = np.zeros(374, dtype=np.int16)
+    private_hands = np.zeros((4, 34), dtype=np.int16)
+    player_melds = np.zeros((4, 34), dtype=np.int16)
+    player_pools = np.zeros((4, 34), dtype=np.int16)
 
     is_closed = [True, True, True, True]
     player_pon_tiles = [[], [], [], []]

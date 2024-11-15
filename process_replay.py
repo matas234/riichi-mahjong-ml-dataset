@@ -4,6 +4,7 @@ from typing import List
 import h5py
 from lxml import etree
 import xml.etree.ElementTree as ET
+import numpy as np
 from tqdm import tqdm
 
 from gamelog_to_states import gamelogToStates
@@ -26,7 +27,7 @@ for i in range(NUMGAMES):
 con.close()
 
 
-### takes a game_log from the .db file, decrompresses it, formats the xml, returns (game_id, game_replay)
+### takes a game_log from the .db file, decrompresses it, formats the xml, returns game_replay
 def convertLog(log):
     blob = log[0]
 
@@ -47,23 +48,24 @@ def convertLog(log):
 
 
 
-TOTAL_ROWS = 10_000#75_000_000
+TOTAL_ROWS = 100_000#75_000_000
 CHUNK_SIZE = 2048
 COMPRESSION = "gzip"
 
+DATASETS_NAMES_TPL = (
+    'riichi_states',
+    'riichi_labels',
+    'chi_states',
+    'chi_labels',
+    'pon_states',
+    'pon_labels',
+    'kan_states',
+    'kan_labels'
+)
 
-def saveAll(years: List[int], path_to_save_in: str, path_to_db_file: str):
-    with h5py.File(r"C:\Users\msaba\Documents\GitHub\actual-dataset\hanchan_hp5\file.h5", "w") as h5_file:
-        DATASETS_NAMES_TPL = (
-            'riichi_states',
-            'riichi_labels',
-            'chi_states',
-            'chi_labels',
-            'pon_states',
-            'pon_labels',
-            'kan_states',
-            'kan_labels'
-        )
+
+def saveAll(path_to_save_in: str, path_to_db_file: str):
+    with h5py.File(path_to_save_in, "w") as h5_file:
 
         dataset_cur_idx_lst = [0] * 8
 
@@ -72,10 +74,12 @@ def saveAll(years: List[int], path_to_save_in: str, path_to_db_file: str):
             size = 374 if idx%2 == 0 else 2
 
             h5_file.create_dataset(name,
-                                   shape=(TOTAL_ROWS, size),
-                                   maxshape=(None, size),
+                                   shape=      (TOTAL_ROWS, size),
+                                   maxshape=   (None, size),
                                    compression=COMPRESSION,
-                                   chunks=(CHUNK_SIZE, size))
+                                   chunks=     (CHUNK_SIZE, size),
+                                   dtype=      np.int16
+                                   )
 
         dbfile = path_to_db_file
 
@@ -85,7 +89,7 @@ def saveAll(years: List[int], path_to_save_in: str, path_to_db_file: str):
         num_games = res.fetchone()[0]
         res = cur.execute("SELECT log_content FROM logs")
 
-        for _ in tqdm(range(num_games), desc="Processing"):
+        for _ in tqdm(range(1_000), desc="Processing"):
             log = res.fetchone()
 
             # print(f"Processing {log[0]}")

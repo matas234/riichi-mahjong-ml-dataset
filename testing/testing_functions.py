@@ -7,9 +7,6 @@ NUMGAMES = 100
 START_IDX = 0
 
 
-
-
-
 WIND_DIC = {
         0 : "E",
         1 : "S",
@@ -54,7 +51,7 @@ def toWebFormat(handArray):
         3: 'z'
     }
     split_indices=[9,18,27]
-    handArray =  np.split(handArray, split_indices) 
+    handArray =  np.split(handArray, split_indices)
     string = ''
 
     for k, suit in enumerate(handArray):
@@ -63,20 +60,11 @@ def toWebFormat(handArray):
         for num in range(len(suit)):
             if suit[num] == 0:  continue
             else:  string += str(num+1)*suit[num]
-        
+
         string += dict[k]
 
     return string
 
-
-
-#prints a matrix in readable format
-def matprint(mat, fmt="g", file = None):
-    col_maxes = [max([len(("{:"+fmt+"}").format(x)) for x in col]) for col in mat.T]
-    for x in mat:
-        for i, y in enumerate(x):
-            print(("{:"+str(col_maxes[i])+fmt+"}").format(y), end="  " , file=file)
-        print("" , file=file )
 
 
 
@@ -85,37 +73,20 @@ con = sqlite3.connect(dbfile)
 cur = con.cursor()
 res = cur.execute(f"SELECT log_id, log_content FROM logs")
 
-
-
-
 game_logs = res.fetchmany(NUMGAMES)[START_IDX:]
 
 con.close()
 
-games_for_manual_testing = [convertLog(logs) for logs in game_logs]
 
+games_for_manual_testing = [(game_id, convertLog([log])) for game_id, log in game_logs]
 
-def manualTest(gameNum):
-    tupl = games_for_manual_testing[gameNum - START_IDX]
-    game = tupl[1]
-
-    game_riichi, game_chi, game_pon, game_kan = gamelogToStates(game)
-
-    print("gameid: ", tupl[0])
-    for i in game_kan:
-        mat=i[0]
-        printNice(mat)
-        print("label: ", i[1])
-        print("last discard:", mat[0][30])
-        matprint(i[0])
-        print("")
 
 
 
 # prints gameState matrix into a readable format for debugging
 def printNice(game, file = None):
     print("round wind: ", game[0], "| dealer: ", game[1], "| tilesInWall: ", game[5], "| doras: ", toWebFormat(game[34:68]), "| roundNum: ", game[33], "| honba sticks: ", game[3], "| riichi sticks: ", game[4],"| scores", game[6:10] , file=file )
-    print("POV wind: "+ WIND_DIC[game[2]]+ " | POVHand: ", toWebFormat(game[68:102]) , file=file )  
+    print("POV wind: "+ WIND_DIC[game[2]]+ " | POVHand: ", toWebFormat(game[68:102]) , file=file )
 
     for i in range(4):
         print("P"+str(i)+ "| #chi=", game[14+i], "| #pon=", game[18+i], "| #kan=", game[22+i], "| #isOpen=", game[26+i],"| #isRiichi=", game[10+i],"| melds: "+toWebFormat(game[34*(i + 3): 34*(i + 4)]), file=file )
@@ -125,10 +96,10 @@ def printNice(game, file = None):
 
 
 
-def printStates(states, file = None):
-    for state in states:
+def printStates(states, labels, file = None):
+    for state, label in zip(states, labels): #states:
         printNice(state, file=file)
-        print("label: ", state[-1] , file=file )
+        print("label: ", 0 if label[0] else 1 , file=file )
         print("call tile:", TILE_DIC[int(state[30])] , file=file)
         #matprint(i[0], file=file)
         print("", file=file)
@@ -136,31 +107,28 @@ def printStates(states, file = None):
 
 def printTestToFile(gameNum):
     with open("testing/NEW.txt" , "w+") as file:
-        tupl = games_for_manual_testing[gameNum - START_IDX]
-        game = tupl[1]
+        game_id, game = games_for_manual_testing[gameNum - START_IDX]
 
-        game_riichi, game_chi, game_pon, game_kan = gamelogToStates(game)
+        game_riichi, riichi_labels, game_chi, chi_labels, game_pon, pon_labels, game_kan, kan_labels = gamelogToStates(game)
 
-        print("gameid: ", tupl[0], file=file,)
+        print(f"gameid:  {game_id}", file=file,)
 
         print("" , file=file )
         print("" , file=file)
         print("Riichi States" , file=file )
-        printStates(game_riichi, file=file)
+        printStates(game_riichi, riichi_labels, file=file)
 
         print("" , file=file)
-        print("" , file=file) 
+        print("" , file=file)
         print("Chi States" , file=file)
-        printStates(game_chi, file=file)
+        printStates(game_chi, chi_labels, file=file)
 
         print("" , file=file)
         print("" , file=file)
         print("Pon States" , file=file )
-        printStates(game_pon, file=file)
+        printStates(game_pon, pon_labels, file=file)
 
         print("" , file=file)
         print("" , file=file)
         print("Kan States" , file=file)
-        printStates(game_kan, file=file)
-
-
+        printStates(game_kan, kan_labels, file=file)
