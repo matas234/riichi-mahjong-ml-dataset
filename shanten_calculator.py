@@ -3,8 +3,10 @@ from typing import List, Tuple
 import numpy as np
 
 
-splits_groups_cache: dict[Tuple[int], Tuple[int, int, bool]] = {}
-splits_nogroups_cache: dict[Tuple[int], Tuple[int, bool]] = {}
+
+
+splits_groups_cache: dict[int, Tuple[int, int, bool]] = {}
+splits_nogroups_cache: dict[int, Tuple[int, bool]] = {}
 
 
 
@@ -63,14 +65,16 @@ def incompleteSequences(suit_arr: List[int]):
 
 
 def hashSuitArr(suit_arr: List[int]):
-    return sum(1 << (2 * tile)
-               for tile in suit_arr)
+    result = 0
+    for i, tile in enumerate(suit_arr):
+        result |= tile * (1 << (3 * i))  # Use bitwise OR to accumulate the result
+    return result
 
 
 def splitsNoGroups(suit_arr: List[int]):
-    suit_tuple = tuple(suit_arr)
-    if suit_tuple in splits_nogroups_cache:
-        return splits_nogroups_cache[suit_tuple]
+    hash_value = hashSuitArr(suit_arr)
+    if hash_value in splits_nogroups_cache:
+        return splits_nogroups_cache[hash_value]
 
     max_taatsu_num = 0
     max_pair_presence = False
@@ -91,17 +95,17 @@ def splitsNoGroups(suit_arr: List[int]):
             max_taatsu_num = cur_taatsu_num
             max_pair_presence = cur_pair_presence
 
-    splits_nogroups_cache[suit_tuple] = (max_taatsu_num, max_pair_presence)
+    splits_nogroups_cache[hash_value] = (max_taatsu_num, max_pair_presence)
 
     return max_taatsu_num, max_pair_presence
 
 
 def splits(suit_arr: List[int], groupNum: int = 0, pair_presence: bool = False):
     ## checks if suit_arr is cached
-    suit_tuple = tuple(suit_arr)
+    hash_value = hashSuitArr(suit_arr)
 
-    if suit_tuple in splits_groups_cache:
-        (cached_group_num, cached_tatsu_num, cached_pair_presence) = splits_groups_cache[suit_tuple]
+    if hash_value in splits_groups_cache:
+        (cached_group_num, cached_tatsu_num, cached_pair_presence) = splits_groups_cache[hash_value]
 
         return (cached_group_num + groupNum,
                 cached_tatsu_num,
@@ -131,7 +135,7 @@ def splits(suit_arr: List[int], groupNum: int = 0, pair_presence: bool = False):
         max_tatsu_num, max_pair_presence = splitsNoGroups(suit_arr)
 
 
-    splits_groups_cache[suit_tuple] = (max_grp_num - groupNum, max_tatsu_num, max_pair_presence)
+    splits_groups_cache[hash_value] = (max_grp_num - groupNum, max_tatsu_num, max_pair_presence)
 
     return max_grp_num, max_tatsu_num, max_pair_presence
 
